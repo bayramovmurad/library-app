@@ -1,0 +1,44 @@
+        .home_first_section {
+            width: 80%;
+            margin: 10% 16%;
+        }
+        
+        .first_section {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .first_text {
+            width: 30%;
+        }
+        
+        .first_text h2 {
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 70px;
+            color: var(--darkBlue);
+            font-family: var(--montserrat);
+        }
+        
+        .first_text p {
+            font-weight: 900;
+            line-height: 26px;
+            font-weight: 400;
+            font-size: 13px;
+            color: var(--darkBlue);
+            font-family: var(--montserrat);
+        }
+        
+        .first_text button {
+            width: 212px;
+            height: 50px;
+            background-color: var(--orange);
+            color: var(--white);
+            border: none;
+            font-weight: 900;
+            line-height: 29px;
+            margin-top: 16px;
+            text-align: left;
+            padding-left: 16px;
+            font-family: var(--montserrat);
+        }
