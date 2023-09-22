@@ -1,6 +1,8 @@
 @import "./utilites/reset.css";
 @import "./utilites/font.css";
 @import "./utilites/variable.css";
-@import './index.css';
 @import "./components/header.css";
-@import "./pages/home.css"
+@import './components/socialMedia.css';
+@import "./components/footer.css";
+@import './index.css';
+@import "./pages/home.css";
