@@ -7,6 +7,8 @@
     <title>Library App</title>
     <!-- !css -->
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <!--bootstrap
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
 </head>
 
 <body>
@@ -37,10 +39,12 @@
                 </li>
             </ul>
         </nav>
-        <div class="join_us">
-            <img src="./assets/img/user.svg" alt="">
-            <span>Join us</span>
-        </div>
+        <button class="join_us" data-toggle="modal" data-target="#staticBackdrop">
+            <a href="" data-toggle="modal" data-target="#exampleModal">
+                <img src="./assets/img/user.svg" alt="">
+                <span>Join us</span>
+            </a>
+        </button>
     </header>
     <!-- !HEADER COMPONENT END-->
     <main>
@@ -170,13 +174,19 @@
 
     </footer>
     <!-- !FOOTER-COMPONENT END-->
-    <script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF "
+        crossorigin="anonymous "></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <!-- <script>
         let a =
             100 *
             1060 /
             1440
         console.log(a.toFixed(2))
-    </script>
+    </script> -->
 </body>
 
 </html>

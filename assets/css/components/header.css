@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--pink);
 }
 
 .header_logo {
@@ -48,14 +47,19 @@
 }
 
 .join_us {
-    display: flex;
-    align-items: center;
-    gap: 6px;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     margin-right: 6.39%;
     font-family: var(--roboto);
+    border: none;
+    background: none;
+}
+
+.join_us a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .join_us span {
@@ -65,4 +69,25 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.modalSection {
+    margin-top: 30%;
+    padding: 30px;
+    width: 600px;
+}
+
+.modalForm input {
+    height: 70px;
+    margin-top: 35px;
+    border: 1px solid #cecece;
+}
+
+.modalForm .joinBtn {
+    height: 70px;
+    color: #fff;
+    background: #e16a00;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    margin-top: 86px;
 }
