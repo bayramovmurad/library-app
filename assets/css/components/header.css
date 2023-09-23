@@ -71,23 +71,71 @@
     line-height: normal;
 }
 
-.modalSection {
-    margin-top: 30%;
-    padding: 30px;
-    width: 600px;
+
+/* !mobile link */
+
+.hamb_menu {
+    display: none;
+    margin-right: 13px;
 }
 
-.modalForm input {
-    height: 70px;
-    margin-top: 35px;
-    border: 1px solid #cecece;
+.hamb_list {
+    padding: 43px 11px 43px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    left: -100%;
 }
 
-.modalForm .joinBtn {
-    height: 70px;
-    color: #fff;
-    background: #e16a00;
-    border: 1px solid #cecece;
-    border-radius: 5px;
-    margin-top: 86px;
+.hamb_list.show {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    left: 0;
+    background: rgba(36, 20, 0, 0.90);
+}
+
+.times_icon {
+    width: fit-content;
+    margin-right: 4px;
+}
+
+.menu_list {
+    margin-top: 73px;
+}
+
+.menu_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu_nav li {
+    text-align: right;
+}
+
+.menu_nav li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 196.187%;
+    font-family: var(--montserrat);
+}
+
+
+/*! responsive */
+
+@media screen and (max-width:768px) {
+    .ul_list {
+        display: none;
+    }
+    .hamb_menu {
+        display: flex;
+        align-items: center;
+    }
 }

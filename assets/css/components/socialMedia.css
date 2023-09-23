@@ -1,5 +1,5 @@
 .social_media {
-    width: 25.31%;
+    width: 350px;
     margin: 0px auto 104px auto;
 }
 
@@ -17,4 +17,18 @@
 .social_svg {
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width:768px) {
+    .social_media {
+        width: 250px;
+        margin: 0px auto 104px auto;
+    }
+    .social_svg img {
+        width: 50px;
+    }
+    .social_media h3 {
+        font-size: 15px;
+        margin-bottom: 22px;
+    }
 }
