@@ -6,4 +6,5 @@
 @import "./components/footer.css";
 @import './index.css';
 @import "./pages/home.css";
-@import "./pages/bookPage.css"
+@import "./pages/bookPage.css";
+@import "./pages/about.css";
