@@ -22,12 +22,12 @@
 .search_form form {
     display: flex;
     flex-direction: column;
-    width: 80%;    
+    width: 90%;    
 }
 
 .search_form input {
     padding-left: 27px;
-    height: 60px;
+    height: 69px;
     border: 1px solid rgba(206, 206, 206, 1);
     border-radius: 5px;
     margin: 44px 0;
@@ -40,7 +40,7 @@
 }
 
 .search_form button {
-    height: 56px;
+    height: 65px;
     border: none;
     border-radius: 5px;
     background-color: var(--orange);
