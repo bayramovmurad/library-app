@@ -1,0 +1,34 @@
+.social_media {
+    width: 350px;
+    margin: 0px auto 104px auto;
+}
+
+.social_media h3 {
+    text-align: center;
+    color: var(--darkBlue);
+    font-family: var(--montserrat);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 196.187%;
+    margin-bottom: 42px;
+}
+
+.social_svg {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:768px) {
+    .social_media {
+        width: 250px;
+        margin: 0px auto 104px auto;
+    }
+    .social_svg img {
+        width: 50px;
+    }
+    .social_media h3 {
+        font-size: 15px;
+        margin-bottom: 22px;
+    }
+}

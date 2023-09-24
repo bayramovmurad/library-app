@@ -1,0 +1,28 @@
+.about_section {
+    width: 80%;
+    margin: 10% 16%;
+    display: flex;
+}
+
+.about_store h2{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 70px;
+    font-family: var(--montserrat);
+    color: var(--darkBlue);
+}
+
+.about_store p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--montserrat);
+    color: var(--darkBlue);
+    line-height: 35.31px;
+    margin-top: 10px;
+    padding-right: 50px;
+}
+
+.about_img {
+    margin-top: 70px;
+    flex-basis: 40%;
+}
