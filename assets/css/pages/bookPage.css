@@ -1,9 +1,28 @@
 .content {
     display: flex;
-    width: 80%;
-    margin: 10% 16%;
+    /* width: 80%; */
+    margin: 10% 15%;
     justify-content: space-between;
     margin-bottom: 100px;
+}
+
+.btn-mobile {
+    display: none;
+    margin: 16%;
+    width: 100px;
+    height: 29px;
+    margin-bottom: 100px;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-weight: 900;
+    line-height: 20px;
+    margin-top: 50 px;
+    text-align: center;
+    font-family: var(--montserrat);
+    font-size: 10px;
+
 }
 
 .content-left {
@@ -21,12 +40,12 @@
     font-weight: 900;
     line-height: 24px;
     margin-top: 12px;
-    text-align: left;
-    padding-left: 15px;
+    text-align: center;
     font-family: var(--montserrat);
 }
 
-.first button {
+.year {
+    display: block;
     width: 69px;
     height: 23px;
     background: #2F80ED;
@@ -47,16 +66,17 @@
     font-family: var(--montserrat);
     font-size: 35px;
     font-weight: 700;
-    line-height: 69px;
+    line-height: 60px;
     letter-spacing: 0em;
     text-align: left;
+
 }
 
 .first span {
     font-family: var(--montserrat);
     font-size: 16px;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
 }
@@ -81,22 +101,28 @@
     line-height: 35px;
     letter-spacing: 0em;
     text-align: left;
+
+}
+
+.second span {
+    display: block;
 }
 
 .content-right {
     position: relative;
     width: 30%;
+    margin-top: 20px;
 }
 
 .content-right img:first-child {
     position: absolute;
-    top: -6;
-    right: 38;
+    top: -4;
+    right: -15;
 }
 
 .commit_parent {
     width: 80%;
-    margin: 10% 16%;
+    margin: 10% 15%;
 }
 
 .commit_parent input {
@@ -156,7 +182,7 @@
 .commit p:first-child {
     display: inline;
     margin-right: 30px;
-    font-family: Rubik;
+    font-family: var(--rubik);
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
@@ -166,7 +192,7 @@
 
 .commit span {
     display: inline;
-    font-family: Rubik;
+    font-family: var(--rubik);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -177,11 +203,68 @@
 .commit p:last-child {
     display: block;
     margin-top: 20px;
-    font-family: Rubik;
+    font-family: var(--rubik);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
     width: 650.25px;
+}
+
+@media screen and (max-width:768px) {
+    .btn-mobile {
+        display: block;
+
+    }
+
+    .btn-first {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        margin-left: 20%;
+        
+    }
+
+
+    .first span {
+        display: none;
+    }
+
+    .commit_parent {
+        display: none;
+    }
+
+    .year {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    .first h2,
+    .second p:first-child,
+    .second p:last-child {
+        text-align: center;
+        width: auto;
+    }
+
+    .first h2 {
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 49px;
+    }
+.second p:first-child{
+   
+font-size: 12px;
+font-weight: 700;
+line-height: 24px;
+
+}
+    .second p:last-child {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
 }
