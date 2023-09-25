@@ -1,29 +1,29 @@
 .main_catalog{
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: red;
 }
 
 .first_section{
-    width: 1272px;
-height: 431px;
-top: 196px;
-left: 164px;
+    background-color: yellow;
 
+    width: 80%;
 }
 
-
+.first_section_header{
+    display: flex;
+}
 
 .allBooks{
-    position: relative;
+    background-color: blueviolet;
     display: flex;
-    align-items: center;
     justify-content: flex-start;
     text-align: left; 
-    width: 129px;
-    height: 49px;
-    top: 196px;
-    left: 215px;
-
+    margin-top: 196px;
+    margin-left: 215px;
 }
 
 .allBooksText{
@@ -49,7 +49,7 @@ left: 164px;
         position: relative;
         display: flex;
         align-items: center;
-        justify-content: flex-star;
+        justify-content: flex-start;
     }
     
     .text_fantastic{
