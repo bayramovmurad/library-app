@@ -1,0 +1,120 @@
+.input_section{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 15%; */
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 112px;
+    /* background-color: red; */
+
+}
+.contact_us{
+    font-size: 36px;
+    color: var(--textcolor);
+    font-family: var(--montserrat);
+    font-weight: 900;
+    margin-left: 8%;
+
+}
+.contact_input{
+    width: 45%;
+    height: 75px;
+    border: 1px solid var(--inputBorder);
+}
+.input_message{
+    width: 93.6%;
+    height: 153px;
+    border: 1px solid var(--inputBorder);
+}
+.send_btn button{
+    background-color: var(--orange);
+    text-align: center;
+    color:white;
+    font-size: 30px;
+    font-family:  --crimsonText;
+    font-weight: 400;
+    width: 45%;
+    height: 75px;
+    border: none;
+    margin-top: 85px;
+}
+.send_btn{
+    display: flex;
+    justify-content: center;
+}
+.inputs{
+    display: flex;
+    gap: 36.54px;
+    margin: 0 auto;
+}
+.adress_input{
+    margin-top: 33px;
+}
+.all_inputs{
+    width: 85%;
+    margin: 0 auto;
+
+    margin-top: 28px;
+}
+.contact_input::placeholder{
+color: var(--placeHolder);
+font-size: 23px;
+font-weight: 400;
+font-family:  --crimsonText;
+padding-left: 38px;
+}
+.input_message{
+    color: var(--placeHolder);
+font-size: 23px;
+font-weight: 400;
+font-family:var(--crimsonText) ;
+padding-left: 38px;
+padding-bottom: 107px;
+}
+.social_media{
+    margin-top: 126px;
+}
+
+@media screen and (max-width:768px){
+    .contact_input{
+        width: 60%;
+        height: 39px;
+    }
+      .input_section{
+        width: 70%;
+    }
+
+    .inputs{
+        display: flex;
+        flex-direction: column;
+align-items: center;
+    }
+    .contact_us{
+color: var(--darkBlue);
+ font-size: 25px;
+ font-family: var(--montserrat);
+ font-weight: 900;
+ line-height: 49.05px;
+ text-align: center;
+    }
+    .contact_input::placeholder{
+color: var(--darkBlue);
+ font-size: 16px;
+ font-family: Crimson Text;
+ font-weight: 400;
+    }
+    .input_message{
+        display: none;
+    }
+    .send_btn button{
+ width: 243px;
+ height: 39px;
+color: white;
+ font-size: 16px;
+ font-family:var( --crimsonText);
+ font-weight: 400;
+    }
+    .input_phone{
+        margin-top: -0.5%;
+    }
+}

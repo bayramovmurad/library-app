@@ -10,6 +10,8 @@
     --white: #fff;
     --black: #000;
     --fill: #391F00;
+    --inputBorder:#CECECE;
+    --placeHolder:#797667;
     /* Fonts */
     --montserrat: "Montserrat", sans-serif;
     --roboto: "Roboto", sans-serif;
