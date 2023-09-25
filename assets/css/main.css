@@ -1,10 +1,14 @@
 @import "./utilites/reset.css";
 @import "./utilites/font.css";
 @import "./utilites/variable.css";
+@import './index.css';
 @import "./components/header.css";
 @import './components/socialMedia.css';
 @import "./components/footer.css";
-@import './index.css';
 @import "./pages/home.css";
 @import "./pages/bookPage.css";
 @import "./pages/contact.css"
+@import "./pages/catalogPage.css";
+@import "./pages/about.css";
+@import "./pages/search.css";
+
