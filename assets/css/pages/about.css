@@ -26,3 +26,32 @@
     margin-top: 70px;
     flex-basis: 40%;
 }
+
+@media screen and (max-width:1250px) {
+    .about_section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .about_store h2 {
+        text-align: center;
+    }
+
+    .about_img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about_store {
+        padding: 59px 0 130px 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:678px) {
+    .about_img img {
+        width: 90%;
+    }
+}
