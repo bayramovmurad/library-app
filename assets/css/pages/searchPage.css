@@ -31,6 +31,7 @@
     border: 1px solid rgba(206, 206, 206, 1);
     border-radius: 5px;
     margin: 44px 0;
+    font-size: 23px;
 }
 
 .search_form input::placeholder {
@@ -61,6 +62,10 @@
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     padding: 47px 32px;
+}
+
+.slider_contain {
+    display: none;
 }
 
 .contain_about {
@@ -98,4 +103,77 @@
     position: absolute;
     top: 50%;
     right: 0;
+}
+
+@media screen and (max-width:1250px){
+    .search_section {
+        width: 80%;
+         margin: 0 auto;
+         margin-top: 134px;
+    }
+
+    .search_main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }  
+
+    .search_section h2 {
+        text-align: center;
+    }
+    
+    .search_form {
+        width: 70%;
+    }
+
+    .search_form form {
+        margin: 0 auto;        
+    }
+
+    .search_contain {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:768px){
+    .contain {
+        display: none;
+    }
+
+    .search_form {
+        width: 100%;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    .slider_contain {
+        display: block;
+        margin-top: 79px;
+    }
+
+    .slider_contain .contain_img img {
+        width: 100%;
+    }
+
+    .slider_contain .contain_about {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .slider_contain .contain_about h3 {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    .slider_contain .contain_about .contain_about_name {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .slider_contain .contain_about .contain_about_info {
+        font-size: 12px;
+        font-weight: 400;
+    }
 }
