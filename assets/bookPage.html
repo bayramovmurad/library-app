@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- !HEADER COMPONENT -->
     <header class="header">
         <div class="header_logo">
             <img src="./img/book.svg" alt="">
@@ -24,19 +25,19 @@
         <nav>
             <ul class="ul_list">
                 <li>
-                    <a href="">Home</a>
+                    <a href="../index.html "> Home </a>
                 </li>
                 <li>
-                    <a href="">Catalog</a>
+                    <a href=" ./catologPage.html "> Catalog </a>
                 </li>
                 <li>
-                    <a href="">About Store</a>
+                    <a href=" ./about.html "> About Store</a>
                 </li>
                 <li>
-                    <a href="">Contact Us</a>
+                    <a href=" ./contact.html "> Contact Us </a>
                 </li>
                 <li>
-                    <a href="">Search</a>
+                    <a href=" ./searchPage.html "> Search </a>
                 </li>
             </ul>
         </nav>
@@ -46,24 +47,55 @@
                 <span>Join us</span>
             </a>
         </button>
+        <div class="hamb_menu">
+            <div id="list_icon" class="list_icon">
+                <img src="./img/listIcon.svg" alt=" " />
+            </div>
+            <div id="hamb_list" class="hamb_list">
+                <img id="times_icon" class="times_icon" src="./img/timesIcon.svg" alt=" " />
+
+                <div class="menu_list">
+                    <ul class="menu_nav">
+                        <li>
+                            <a href="../index.html "> Home </a>
+                        </li>
+                        <li>
+                            <a href=" ./catologPage.html "> Catalog </a>
+                        </li>
+                        <li>
+                            <a href=" ./about.html "> About Store</a>
+                        </li>
+                        <li>
+                            <a href=" ./contact.html "> Contact Us </a>
+                        </li>
+                        <li>
+                            <a href=" ./searchPage.html "> Search </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
+
+
     <!-- !HEADER COMPONENT END-->
     <main class="main-content">
+        <button class="btn-mobile"> <a href="../index.html">&lt BACK</a> </button>
         <section class="content">
             <section class="content-left">
                 <button class="btn-first"> <a href="../index.html">&lt BACK</a> </button>
 
-
+                <button class="year"> 2017
+                </button>
                 <div class="first">
-                    <button> 2017
-                    </button>
                     <h2>Order in Chaos</h2>
                     <span>2 days ago added</span>
                 </div>
                 <div class="second">
                     <p>Konstantin Koptelov</p>
                     <p> s of Kiev can receive an order on the day of its registration. Customers from other cities of Ukraine can receive an order within 1-5 days, depending on the location of the settlement and the selected delivery method. Orders over UAH
-                        1000 are delivered free of charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order basket, after selecting the delivery city. More details </p>
+                        1000 are delivered free of charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order basket, after selecting the delivery city. <span> More
+                            details</span> </p>
                 </div>
 
             </section>
@@ -85,7 +117,8 @@
 
 
 
-                <p>Woah, your project looks awesome! How long have you been coding for? I’m still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</p>
+                <p>Woah, your project looks awesome! How long have you been coding for? I’m still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+                </p>
 
             </div>
             <div class="commit">
@@ -114,11 +147,11 @@
 
     <!-- !FOOTER-COMPONENT -->
     <footer>
-        <div class="footer_container">
-            <div>
+        <div class="footer_container ">
+            <div class="footer_logo">
                 <img src="./img/footerLogo.svg " alt=" " />
             </div>
-            <div class="footer_list">
+            <div class="footer_list ">
                 <ul>
                     <li>Popular</li>
                     <li><a href=" ">Programming</a></li>
@@ -134,32 +167,57 @@
                 </ul>
                 <ul>
                     <li>Help</li>
-                    <li><a href="">Contacts</a>
+                    <li><a href=" " ">Contacts</a>
                     </li>
                     <li><a href=" " ">Purchase returns</a>
                     </li>
                     <li>
                         <a href=" " ">Buyer help</a>
                     </li>
-                </ul>
+                    </ul>
+                </div>
+                <div class=" footer_call ">
+                    <p>+38 (071) 339-16-26</p>
+                    <button>Request a call </button>
+                </div>
+                <div class=" footer_list_link ">
+                    <ul class=" footer_nav ">
+                    <li>
+                        <a href=" ../index.html "> Home </a>
+                    </li>
+                    <li>
+                        <a href=" ./catologPage.html "> Catalog </a>
+                    </li>
+                    <li>
+                        <a href=" ./about.html "> About Store</a>
+                    </li>
+                    <li>
+                        <a href=" ./contact.html "> Contact Us </a>
+                    </li>
+                    <li>
+                        <a href=" ./searchPage.html "> Search </a>
+                    </li>
+                    </ul>
+                </div>
             </div>
-            <div class=" footer_call ">
-                <p>+38 (071) 339-16-26</p>
-                <button>Request a call </button>
+            <div class=" footer_mobile_info ">
+                <p>Library BookStore EACamp</p><br>
+                <span>© 2003-2021</span>
+    
             </div>
-        </div>
-        <p class=" footer_info ">All rights reserved © 2003-2022 LIBRARY TERMS OF USE | Privacy Policy
-        </p>
-
-    </footer>
+            <p class=" footer_info ">All rights reserved © 2003-2022 LIBRARY TERMS OF USE | Privacy Policy
+            </p>
+    
+            </footer>
     <!-- !FOOTER-COMPONENT END-->
-    <script>
+    <!-- <script>
         let a =
             100 *
             1060 /
             1440
         console.log(a.toFixed(2))
-    </script>
+    </script> -->
+    <script src="./js/hamb.js "></script>
 </body>
 
 </html>

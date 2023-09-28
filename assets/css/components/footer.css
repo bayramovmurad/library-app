@@ -133,14 +133,14 @@
             display: none;
         }
         .footer_mobile_info {
-            display: flex;
+            position: relative;
+            display: block;
             text-align: center;
             color: var(--white);
             font-family: var(--montserrat);
             font-size: 12px;
             font-style: normal;
             font-weight: 400;
-            position: relative;
         }
         .footer_mobile_info::before {
             content: "";
@@ -152,5 +152,11 @@
             min-width: 80%;
             border-style: solid;
             border: .5px solid var(--white);
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .footer_nav li a {
+            font-size: 12px;
         }
     }

@@ -1,4 +1,5 @@
 :root {
+
     /* Colors */
     --red: #720418;
     --orange: #e16a00;
@@ -10,7 +11,13 @@
     --white: #fff;
     --black: #000;
     --fill: #391F00;
+    --inputBorder:#CECECE;
+    --placeHolder:#797667;
     /* Fonts */
     --montserrat: "Montserrat", sans-serif;
     --roboto: "Roboto", sans-serif;
+    --crimson: "Crimson Text", serif;
+    --rubik: "Rubik", sans-serif;
+    --nstino: "Nunito Sans", sans-serif;
+    --preahvihear: "Preahvihear", sans-serif;
 }
