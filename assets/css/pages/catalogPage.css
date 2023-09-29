@@ -356,6 +356,9 @@
     .direction{
         display: none;
     }
+    .catalog_menu{
+        flex-wrap: wrap;
+    }
 }
 @media screen and (max-width: 768px){
     .item{
@@ -364,5 +367,6 @@
     .direction{
         display: none;
     }
+   
 }
   
