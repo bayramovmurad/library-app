@@ -10,43 +10,74 @@
 </head>
 
 <body>
+    <!-- !HEADER COMPONENT -->
     <header class="header">
         <div class="header_logo">
             <img src="./img/book.svg" alt="">
             <h2><b>LIBRARY</b><br><span>
                     book store
-                </span></h2>
+                </span>
+                <p></p>
+            </h2>
         </div>
         <nav>
             <ul class="ul_list">
                 <li>
-                    <a href="">Home</a>
+                    <a href="../index.html "> Home </a>
                 </li>
                 <li>
-                    <a href="">Catalog</a>
+                    <a href="./catologPage.html "> Catalog </a>
                 </li>
                 <li>
-                    <a href="">About Store</a>
+                    <a href="./about.html "> About Store</a>
                 </li>
                 <li>
-                    <a href="">Contact Us</a>
+                    <a href="./contact.html "> Contact Us </a>
                 </li>
                 <li>
-                    <a href="">Search</a>
+                    <a href="./searchPage.html "> Search </a>
                 </li>
             </ul>
         </nav>
         <button class="join_us" data-toggle="modal" data-target="#staticBackdrop">
-        <a href="" data-toggle="modal" data-target="#exampleModal">
-            <img src="./img/user.svg" alt="">
-            <span>Join us</span>
-        </a>
-    </button>
+            <a href="" data-toggle="modal" data-target="#exampleModal">
+                <img src="./img/user.svg" alt="">
+                <span>Join us</span>
+            </a>
+        </button>
+        <div class="hamb_menu">
+            <div id="list_icon" class="list_icon">
+                <img src="./img/listIcon.svg" alt=" " />
+            </div>
+            <div id="hamb_list" class="hamb_list">
+                <img id="times_icon" class="times_icon" src="./img/timesIcon.svg" alt=" " />
+
+                <div class="menu_list">
+                    <ul class="menu_nav">
+                        <li>
+                            <a href="../index.html "> Home </a>
+                        </li>
+                        <li>
+                            <a href="./catologPage.html "> Catalog </a>
+                        </li>
+                        <li>
+                            <a href="./about.html "> About Store</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html "> Contact Us </a>
+                        </li>
+                        <li>
+                            <a href="./searchPage.html "> Search </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main class="main_catalog">
+    <main class="catalog_main">
 
-        <section class="catalog_section">
+        <!-- <section class="catalog_section">
 
             <div class="first_section_header">
                 <div class="allBooks">
@@ -68,6 +99,9 @@
                     </div>
                 </div>
             </div>
+
+
+            
 
             <div class="card-container">
                 <div class="arrow-box">
@@ -262,23 +296,130 @@
                     <img src="./img/right-arrow.svg" alt="right-arrow" />
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
 
-        <section class="social_media ">
-            <h3>Follow us on social media</h3>
-            <div class="social_svg ">
-                <img src="./img/facebook.svg " alt=" ">
-                <img src="./img/twitter.svg " alt=" ">
-                <img src="./img/instagram.svg " alt=" ">
+        <section class="catalog">
+            <div class="catalog_title">
+                <div class="catalog_menu">
+                    <h2>All Books</h2>
+                    <ul class="catalog_list">
+                        <li><a href="">Fantastic</a></li>
+                        <li><a href="">Self-development</a></li>
+                        <li><a href="">Baby</a></li>
+                        <li><a href="">Class</a></li>
+                    </ul>
+                </div>
             </div>
+        
+        <div class="slider">
+            <div class="direction">
+                <img id="prev" src="./img/prev-arrow.svg" alt="">
+            </div>
+            <div id="formList">
+                <div id="list">
+                    <div class="item">
+                        <img src="./img/slider-book.svg" class="avatar">
+                        <div class="content-slider">
+                            <h2>Order in Chaos</h2>
+                            <p>Konstantin Koptelov</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/slider-book.svg" class="avatar">
+                        <div class="content-slider">
+                            <h2>Order in Chaos</h2>
+                            <p>Konstantin Koptelov</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/slider-book.svg" class="avatar">
+                        <div class="content-slider">
+                            <h2>Order in Chaos</h2>
+                            <p>Konstantin Koptelov</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/slider-book.svg" class="avatar">
+                        <div class="content-slider">
+                            <h2>Order in Chaos</h2>
+                            <p>Konstantin Koptelov</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/slider-book.svg" class="avatar">
+                        <div class="content-slider">
+                            <h2>Order in Chaos</h2>
+                            <p>Konstantin Koptelov</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/slider-book.svg" class="avatar">
+                        <div class="content-slider">
+                            <h2>Order in Chaos</h2>
+                            <p>Konstantin Koptelov</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/slider-book.svg" class="avatar">
+                        <div class="content-slider">
+                            <h2>Order in Chaos</h2>
+                            <p>Konstantin Koptelov</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/slider-book.svg" class="avatar">
+                        <div class="content-slider">
+                            <h2>Order in Chaos</h2>
+                            <p>Konstantin Koptelov</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="direction">
+                <img id="next" src="./img/next-arrow.svg" alt="">
+            </div>
+          </div>
+
+
+
+          <div class="slider_title">
+            <h2>Bestseller</h2>
+          </div>
+
+
+
+          <div class="slider_title">
+            <h2>New releases</h2>
+          </div>
+          
+
+
         </section>
+
     </main>
 
 
 
+    <section class="social_media ">
+        <h3>Follow us on social media</h3>
+        <div class="social_svg ">
+            <img src="./img/facebook.svg " alt=" ">
+            <img src="./img/twitter.svg " alt=" ">
+            <img src="./img/instagram.svg " alt=" ">
+        </div>
+    </section>
 
+    
     <footer>
         <div class="footer_container ">
             <div class="footer_logo">
@@ -351,7 +492,8 @@
                 1440
             console.log(a.toFixed(2))
         </script>
-
+        <script src="./js/hamb.js"></script>
+        <script src="./js/slider.js"></script>
 </body>
 
 </html>
