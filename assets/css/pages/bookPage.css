@@ -22,7 +22,6 @@
     text-align: center;
     font-family: var(--montserrat);
     font-size: 10px;
-
 }
 
 .content-left {
@@ -69,7 +68,6 @@
     line-height: 60px;
     letter-spacing: 0em;
     text-align: left;
-
 }
 
 .first span {
@@ -101,7 +99,6 @@
     line-height: 35px;
     letter-spacing: 0em;
     text-align: left;
-
 }
 
 .second span {
@@ -215,56 +212,44 @@
 @media screen and (max-width:768px) {
     .btn-mobile {
         display: block;
-
     }
-
     .btn-first {
         display: none;
     }
-
     .content {
+        align-items: center;
         flex-direction: column-reverse;
-        margin-left: 20%;
-        
+        /* margin-left: 20%; */
     }
-
-
     .first span {
         display: none;
     }
-
     .commit_parent {
         display: none;
     }
-
     .year {
         margin-top: 80px;
         margin-bottom: 50px;
     }
-
     .first h2,
     .second p:first-child,
     .second p:last-child {
         text-align: center;
         width: auto;
     }
-
     .first h2 {
         font-size: 25px;
         font-weight: 900;
         line-height: 49px;
     }
-.second p:first-child{
-   
-font-size: 12px;
-font-weight: 700;
-line-height: 24px;
-
-}
+    .second p:first-child {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+    }
     .second p:last-child {
         font-size: 12px;
         font-weight: 400;
         line-height: 24px;
     }
-
 }
