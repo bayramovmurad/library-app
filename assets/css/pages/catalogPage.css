@@ -1,6 +1,6 @@
 
 .catalog_main {
-    width: 70%;
+    width: 80%;
     margin: 10% auto;
 }
 
@@ -148,7 +148,7 @@ height: 30px;
 }
 
 .scroll_list{
-    width: 300px;
+    width: 400px;
     justify-content: center;
     overflow: auto;
     white-space: nowrap;
