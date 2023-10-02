@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <title>Admin Panel</title>
 </head>
@@ -39,7 +38,7 @@
     </div>
 
 
-    <section id="Second-panel">
+    <main id="Second-panel">
         <section class="left">
             <aside>
                 <div id="second_admin_logo">
@@ -109,70 +108,63 @@
                     <div class="search-book">
                         <p>Search book</p>
                         <div class="search-bar">
-                            <input type="text" placeholder="Dan Brown">
-                            <button>
+                            <input type="text" placeholder="Dan Brown" id="search_input_admin">
+                            <button id="seach_input_btn">
                                 <img src="./img/search-icon.svg" alt="search-icon" width="17px">
                             </button>
                         </div>
 
                     </div>
                     <div class="search-history">
-                        <div>
-                            <img src="./img/clock.svg" alt="clock">
-                            <p>Dan Brown Davinc</p>
-                        </div>
-                        <div>
-                            <img src="./img/clock.svg" alt="clock">
-                            <p>Dan Brown Angel</p>
-                        </div>
+
                     </div>
                 </div>
 
-                <section class="book-form">
+                <form class="book-form">
                     <h3>Book form</h3>
                     <div class="book-form-container">
                         <div>
                             <p>Book Name</p>
-                            <input type="text">
+                            <input class="input_book_name" type="text">
                         </div>
                         <div>
                             <p>Author Name</p>
-                            <input type="text">
+                            <input class="input_book_author" type="text">
                         </div>
                         <div>
                             <p>Book Image Url</p>
-                            <input type="text">
+                            <input class="input_book_img" type="text">
                         </div>
                         <div>
                             <p>Description</p>
-                            <input style="height: 89px;" type="text">
+                            <input class="input_book_desc" style="height: 89px;" type="text">
                         </div>
                         <div>
                             <p>Book Type</p>
-                            <input type="text">
+                            <input class="input_book_type" type="text">
                         </div>
 
                         <div>
-                            <button>Add</button>
+                            <button class="input_book_button type=" submit ">Add</button>
                         </div>
                     </div>
-                </section>
+                </form>
 
 
-                <section class="about-store">
+                <section class="about-store ">
                     <h4>About Store</h4>
-                    <div class="about-store-container">
+                    <div class="about-store-container ">
                         <div>
                             <p>Title</p>
-                            <input type="text">
+                            <input type="text ">
                         </div>
                         <div>
                             <p>Book Image Url</p>
-                            <input type="text">
+                            <input type="text ">
                         </div>
                         <div>
                             <p>Description</p>
-                            <input style="height: 89px;" type="text">
+                            <input style="height: 89px; " type="text ">
                         </div>
                         <div>
                             <button>About info add</button>
@@ -182,9 +174,9 @@
 
             </section>
 
-            <section class="join-us">
+            <section class="join-us ">
                 <h5>Join Us</h5>
-                <div class="join-us-table">
+                <div class="join-us-table ">
                     <table>
                         <tr>
                             <th>#</th>
@@ -216,9 +208,9 @@
             </section>
 
 
-            <section class="books-content">
+            <section class="books-content ">
                 <h6>Books</h6>
-                <div class="books-table">
+                <div class="books-table ">
                     <table>
                         <tr>
                             <th>#</th>
@@ -227,11 +219,11 @@
                             <th>Category</th>
                             <th>Author</th>
                         </tr>
-                        <tr class="bg-white">
+                        <tr class="bg-white ">
                             <td>1</td>
                             <td>
-                                <div class="d-flex align-items-center justify-content-center gap-2">
-                                    <img src="./img/image 8.jpg" alt="image-book">
+                                <div class="d-flex align-items-center justify-content-center gap-2 ">
+                                    <img src="./img/image 8.jpg " alt="image-book ">
                                     <p>Angels</p>
                                 </div>
                             </td>
@@ -246,9 +238,9 @@
 
 
 
-            <section class="Contact-Us">
+            <section class="Contact-Us ">
                 <p>Contact Us</p>
-                <div class="table-content">
+                <div class="table-content ">
                     <table>
                         <tr>
                             <th>#</th>
@@ -290,7 +282,10 @@
             </section>
         </section>
 
-    </section>
+    </main>
+
+    <script src="./js/admin.js ">
+    </script>
 </body>
 
 </html>
