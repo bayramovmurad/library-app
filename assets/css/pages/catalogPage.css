@@ -143,10 +143,16 @@
     display: none;
 }
 
+.new_icon{
+position: absolute;
+top: -5px;
+right: -5px;
+
 .new_icon {
     position: absolute;
     top: -5px;
     right: -5px;
+
 }
 
 .new_icon img {
@@ -167,8 +173,65 @@
     text-align: center;
 }
 
+
+#list2{
+    display: flex;
+    width:max-content;
+}
+#formList2{
+    width:1280px;
+    max-width: 100%;
+    overflow: auto;
+    margin:50px auto 50px;
+    scroll-behavior: smooth;
+    scroll-snap-type: both;
+}
+#formList2::-webkit-scrollbar{
+    display: none;
+}
+#prev2{
+    position: absolute;
+    left: -50px;
+    top: 50%;
+}
+#next2{
+    position: absolute;
+    right: -50px;
+    top: 50%;
+}
+
+#list3{
+    display: flex;
+    width:max-content;
+}
+#formList3{
+    width:1280px;
+    max-width: 100%;
+    overflow: auto;
+    margin:50px auto 50px;
+    scroll-behavior: smooth;
+    scroll-snap-type: both;
+}
+#formList3::-webkit-scrollbar{
+    display: none;
+}
+#prev3{
+    position: absolute;
+    left: -50px;
+    top: 50%;
+}
+#next3{
+    position: absolute;
+    right: -50px;
+    top: 50%;
+}
+
+
+
+
 @media screen and (max-width: 1024px) {
     .item {
+
         width: calc(33.3vw - 20px);
     }
     .item .avatar {
@@ -189,4 +252,4 @@
     .direction {
         display: none;
     }
-}
+
