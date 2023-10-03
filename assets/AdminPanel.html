@@ -27,12 +27,12 @@
 
         <section id="Login">
             <div class="login-container">
-                <div class="form">
+                <form class="form">
                     <p>Welcome Admin</p>
                     <input type="text" placeholder="Username">
-                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="password">
                     <button>Join</button>
-                </div>
+                </form>
             </div>
         </section>
     </div>
@@ -151,20 +151,20 @@
                 </form>
 
 
-                <section class="about-store ">
+                <section class=" about-store ">
                     <h4>About Store</h4>
-                    <div class="about-store-container ">
+                    <div class=" about-store-container ">
                         <div>
                             <p>Title</p>
-                            <input type="text ">
+                            <input type=" text ">
                         </div>
                         <div>
                             <p>Book Image Url</p>
-                            <input type="text ">
+                            <input type=" text ">
                         </div>
                         <div>
                             <p>Description</p>
-                            <input style="height: 89px; " type="text ">
+                            <input style=" height: 89px; " type=" text ">
                         </div>
                         <div>
                             <button>About info add</button>
@@ -174,9 +174,9 @@
 
             </section>
 
-            <section class="join-us ">
+            <section class=" join-us ">
                 <h5>Join Us</h5>
-                <div class="join-us-table ">
+                <div class=" join-us-table ">
                     <table>
                         <tr>
                             <th>#</th>
@@ -208,9 +208,9 @@
             </section>
 
 
-            <section class="books-content ">
+            <section class=" books-content ">
                 <h6>Books</h6>
-                <div class="books-table ">
+                <div class=" books-table ">
                     <table>
                         <tr>
                             <th>#</th>
@@ -219,11 +219,11 @@
                             <th>Category</th>
                             <th>Author</th>
                         </tr>
-                        <tr class="bg-white ">
+                        <tr class=" bg-white ">
                             <td>1</td>
                             <td>
-                                <div class="d-flex align-items-center justify-content-center gap-2 ">
-                                    <img src="./img/image 8.jpg " alt="image-book ">
+                                <div class=" d-flex align-items-center justify-content-center gap-2 ">
+                                    <img src=" ./img/image 8.jpg " alt=" image-book ">
                                     <p>Angels</p>
                                 </div>
                             </td>
@@ -238,9 +238,9 @@
 
 
 
-            <section class="Contact-Us ">
+            <section class=" Contact-Us ">
                 <p>Contact Us</p>
-                <div class="table-content ">
+                <div class=" table-content ">
                     <table>
                         <tr>
                             <th>#</th>
@@ -284,8 +284,24 @@
 
     </main>
 
-    <script src="./js/admin.js ">
+    <script type='module'>
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from " https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js ";
+        import { getDatabase } from " https://www.gstatic.com/firebasejs/10.4.0/firabse-database.js ";
+        // TODO: Add SDKs for Firebase products that you want to use // https://firebase.google.com/docs/web/setup#available-libraries // Your web app 's Firebase configuration
+        const firebaseConfig = {
+            apiKey: " AIzaSyBPpBEJBpcRwZxwpV7xrH6KvN8xG3if84k ",
+            authDomain: " library-app-419d1.firebaseapp.com ",
+            projectId: " library-app-419d1 ",
+            storageBucket: " library-app-419d1.appspot.com ",
+            messagingSenderId: " 994823770626 ",
+            appId: " 1:994823770626:web:5f7de5fb8491e1df468d1b "
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        console.log(database);
     </script>
+    <script src=" ./js/admin.js "></script>
 </body>
-
 </html>
