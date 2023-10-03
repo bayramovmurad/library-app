@@ -17,6 +17,8 @@
 
 .search_form {
     width: 40%;
+    margin-right: 25px;
+    margin-top: 20px;
 }
 
 .search_form form {
@@ -175,5 +177,130 @@
     .slider_contain .contain_about .contain_about_info {
         font-size: 12px;
         font-weight: 400;
+    }
+}
+
+
+
+
+
+
+
+
+.slider {
+    position: relative;
+    width: 65%;
+}
+
+#prev-search {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+}
+
+#next-search {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+}
+
+.item-search {
+    width: 750px;
+    height: 500px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 15px 0px #00000040;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 47px 56px 100px 31px;
+    scroll-snap-align: center;
+    position: relative;
+    display: flex;
+    margin: 15px 30px;
+}
+
+.item-search .content-slider-search {
+    font-family: var(--montserrat);
+    margin-left: 37px;
+}
+
+.content-slider-search h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content-search-name{
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.content-search-about{
+    font-size: 14px;
+    line-height: 27px;
+}
+
+
+#list-search {
+    display: flex;
+    width: max-content;
+}
+
+#formList-search {
+    width: 1280px;
+    max-width: 100%;
+    overflow: auto;
+    margin: 50px auto 50px;
+    scroll-behavior: smooth;
+    scroll-snap-type: both;
+}
+
+#formList-search::-webkit-scrollbar {
+    display: none;
+}
+
+.new_icon {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.new_icon img {
+    width: 63px;
+    height: 30px;
+}
+
+.scroll_list {
+    width: 400px;
+    justify-content: center;
+    overflow: auto;
+    white-space: nowrap;
+    height: 40px;
+}
+
+.scroll_list a {
+    display: inline-block;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .item-search {
+        width: calc(33.3vw - 20px);
+    }
+    .item-search .avatar-search {
+        width: 50%;
+    }
+    .direction {
+        display: none;
+    }
+    .catalog_menu {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .item-search {
+        width: calc(50vw - 20px);
+    }
+    .direction {
+        display: none;
     }
 }
