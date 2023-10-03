@@ -1,220 +1,3 @@
-/* .main_catalog {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.catalog_section{
-    width: 80%;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
-    padding: 20px;
-}
-
-
-.first_section_header{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    width: 90%;
-}
-
-.second_section_header{
-    width: 80%;
-}
-
-.third_section_header{
-    width: 80%;
-}
-
-
-.allBooks {
-    position: relative;
-
-    display: flex;
-    flex-grow: 3;
-    justify-content: flex-start;
-    text-align: left; 
-}
-
-
-.bestseller{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.newreleases{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.allBooksText{
-    text-align: left;
-    width: 129px;
-    height: 49px;
-    top: 196px;
-    left: 215px;
-}
-
-.allBooksText {
-    color: var(--darkBlue);
-    font-family: var(--montserrat);
-    font-weight: 900;
-    font-size: 25px;
-    line-height: 49.05px;
-}
-
-.frame-4{
-    display: flex;
-    flex-direction: row;
-    flex-grow: 7;
-    gap: 40px;
-    } 
-
-    .frame-4 div{
-        text-align: left;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-    
-    .frame-4 p{
-        color:var(--darkBlue);
-        font-family: var(--montserrat);
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 26px;
-        text-align: left;
-    }
-
-
-    .card-container{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-        gap: 40px;
-        width: 100%;
-        
-    }
-
-    .card{
-        width: 184px;
-        height: 332px;
-        background:var(--white);
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
-        position: relative;
-
-    }
-
-    .card-text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        height: 130px;
-    }
-
-    h3{
-        color: var(--darkBlue);
-        font-family: var(--montserrat);
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 196.187%;
-    }
-
-    .card-text p{
-        color: var(--darkBlue);
-        font-family: var(--montserrat);
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 196.187%; 
-    }
-
-    .card-btn{
-        width: 136px;
-        height: 29px; 
-        border-radius: 3px;
-        background: var(--orange);
-        box-shadow: 0px 3px 8px 0px;
-        color: var(--white);
-        font-family: var(--montserrat);
-        font-size: 12px;
-        font-weight: 900;
-        line-height: 196.187%;
-        text-transform: uppercase;
-        outline: none;
-        border: none;
-    }
-
-    .badge-new{
-        position: relative;
-        width: 80px;
-        height: 20px;
-        bottom: 102px;
-        left: 138px;
-        color: var(--white);
-        border-radius: 5px;
-        font-family: var(--montserrat);
-        font-size: 9px;
-        font-weight: 900;
-        line-height: 196.187%;
-
-    }
-
-    .book-card{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-        height: 160px;
-    }
-
-
-    .arrow-box{
-        position: relative;
-        flex-shrink: 0;
-        top: 166px;
-    } */
-
-
-/*     align-items: flex-start;
-    justify-content: flex-start;
-    height: 26px;
-    position: relative;
-} */
-
-
-/* .fantastic {
-    text-align: left;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-star;
-}
-
-.text_fantastic {
-    color: var(--darkBlue);
-    font-family: var(--montserrat);
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-}
-
-.first_section_header {
-    display: flex;
-    justify-content: space-around;
-} */
-
 .catalog_main {
     width: 80%;
     margin: 10% auto;
@@ -229,12 +12,14 @@
     display: flex;
     justify-content: space-between;
     font-family: var(--montserrat);
+    gap: 9px;
 }
 
 .catalog_list {
     width: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 40px;
 }
 
 .catalog_menu h2 {
@@ -367,6 +152,19 @@
 .new_icon img {
     width: 63px;
     height: 30px;
+}
+
+.scroll_list {
+    width: 400px;
+    justify-content: center;
+    overflow: auto;
+    white-space: nowrap;
+    height: 40px;
+}
+
+.scroll_list a {
+    display: inline-block;
+    text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
