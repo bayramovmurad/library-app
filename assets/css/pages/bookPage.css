@@ -1,17 +1,19 @@
 .content {
     display: flex;
     /* width: 80%; */
-    margin: 10% 15%;
-    justify-content: space-between;
-    margin-bottom: 100px;
+    margin-left: 15%;
+    margin-top: 173px;
+    /* justify-content: space-between; */
+    gap: 141px;
 }
 
 .btn-mobile {
     display: none;
-    margin: 16%;
+    margin-left: 15%;
+    margin-top: 51px;
+    margin-bottom: 68px;
     width: 100px;
     height: 29px;
-    margin-bottom: 100px;
     background-color: var(--orange);
     color: var(--white);
     border: none;
@@ -22,24 +24,22 @@
     text-align: center;
     font-family: var(--montserrat);
     font-size: 10px;
-
 }
 
 .content-left {
-    width: 70%;
+    /* width: 70%; */
 }
 
 .btn-first {
     width: 100px;
     height: 29px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     background-color: var(--orange);
     color: var(--white);
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     font-weight: 900;
     line-height: 24px;
-    margin-top: 12px;
     text-align: center;
     font-family: var(--montserrat);
 }
@@ -50,7 +50,7 @@
     height: 23px;
     background: #2F80ED;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0px 3px 8px 0px #E16A0030;
     color: var(--white);
     font-family: var(--montserrat);
@@ -58,18 +58,18 @@
     font-weight: 900;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
-    padding-left: 20px;
+    text-align: center;
+    /* padding-left: 20px; */
 }
 
 .first h2 {
     font-family: var(--montserrat);
     font-size: 35px;
     font-weight: 700;
-    line-height: 60px;
     letter-spacing: 0em;
     text-align: left;
-
+    color: #241400;
+    line-height: 60px;
 }
 
 .first span {
@@ -79,6 +79,8 @@
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
+    color: #241400;
+    /* line-height: 31.39px;  */
 }
 
 .second p:first-child {
@@ -88,10 +90,11 @@
     line-height: 43px;
     letter-spacing: 0em;
     text-align: left;
+    color: #241400;
 }
 
 .second p:last-child {
-    width: 686px;
+    max-width: 686px;
     font-family: var(--montserrat);
     font-weight: 400;
     letter-spacing: 0em;
@@ -101,7 +104,6 @@
     line-height: 35px;
     letter-spacing: 0em;
     text-align: left;
-
 }
 
 .second span {
@@ -110,14 +112,17 @@
 
 .content-right {
     position: relative;
-    width: 30%;
-    margin-top: 20px;
+}
+
+.bookImg {
+    max-width: 379px;
+    max-height: 529px;
 }
 
 .content-right img:first-child {
     position: absolute;
-    top: -4;
-    right: -15;
+    top: -5;
+    right: 10;
 }
 
 .commit_parent {
@@ -136,7 +141,7 @@
 .commit_parent div:first-child {
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
 }
 
 .commit_parent input::placeholder {
@@ -144,9 +149,9 @@
     font-size: 20px;
     font-weight: 300;
     line-height: 23px;
-    letter-spacing: 0.05em;
+    letter-spacing: 1px;
     text-align: left;
-    padding-left: 30px;
+    padding-left: 38px;
     color: #232323;
 }
 
@@ -162,21 +167,21 @@
 }
 
 .commit {
-    width: 686px;
-    height: 167px;
+    max-width: 686px;
+    min-height: 167;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px #0000001A;
-    margin-bottom: 50px;
+    margin-bottom: 43px;
     padding-left: 18px;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 29px;
     justify-content: center;
     box-sizing: border-box;
 }
 
 .commit div {
     display: flex;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 .commit p:first-child {
@@ -202,69 +207,77 @@
 
 .commit p:last-child {
     display: block;
-    margin-top: 20px;
+    margin-top: 14px;
     font-family: var(--rubik);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
-    width: 650.25px;
+    max-width: 650.25px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1150px) {
     .btn-mobile {
         display: block;
-
     }
-
     .btn-first {
         display: none;
     }
-
     .content {
         flex-direction: column-reverse;
-        margin-left: 20%;
-        
+        justify-content: center;
+        align-items: center;
+        gap: 58px;
+        margin: 10% 16%;
     }
-
-
-    .first span {
-        display: none;
-    }
-
-    .commit_parent {
-        display: none;
-    }
-
-    .year {
-        margin-top: 80px;
-        margin-bottom: 50px;
-    }
-
     .first h2,
     .second p:first-child,
     .second p:last-child {
         text-align: center;
         width: auto;
     }
+    .first span {
+        display: none;
+    }
+}
 
+@media screen and (max-width:768px) {
+    .commit_parent {
+        display: none;
+    }
+    .year {
+        width: 69px;
+        height: 23px;
+        margin-bottom: 44px;
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 23.54px;
+    }
     .first h2 {
         font-size: 25px;
         font-weight: 900;
         line-height: 49px;
     }
-.second p:first-child{
-   
-font-size: 12px;
-font-weight: 700;
-line-height: 24px;
-
-}
+    .second p:first-child {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+    }
     .second p:last-child {
         font-size: 12px;
         font-weight: 400;
         line-height: 24px;
     }
-
+    .bookImg {
+        width: 273px;
+        height: 388px;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+    .content-right img:first-child {
+        display: none;
+        /* top: -5;
+        right: 5; */
+    }
 }
