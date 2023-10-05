@@ -1,10 +1,10 @@
 // ==============SLIDER===============
 
-document.getElementById('next').onclick = function () {
+document.getElementById('next1').onclick = function () {
     const widthItem = document.querySelector('.item').offsetWidth;
     document.getElementById('formList').scrollLeft += widthItem;
 }
-document.getElementById('prev').onclick = function () {
+document.getElementById('prev1').onclick = function () {
     const widthItem = document.querySelector('.item').offsetWidth;
     document.getElementById('formList').scrollLeft -= widthItem;
 
@@ -92,9 +92,9 @@ document.getElementById('prev-search').onclick = function () {
 
 }
 
-setupSlider("slider1", "prev1", "next1", "formList");
-setupSlider("slider2", "prev2", "next2", "formList2");
-setupSlider("slider3", "prev3", "next3", "formList3");
+// setupSlider("slider1", "prev1", "next1", "formList");
+// setupSlider("slider2", "prev2", "next2", "formList2");
+// setupSlider("slider3", "prev3", "next3", "formList3");
 
 
 
