@@ -32,6 +32,9 @@
 
 // }
 
+
+// ==============AUTO SLIDER===============
+
 function setupSlider(sliderId, prevBtnId, nextBtnId, formListId) {
   const slider = document.getElementById(sliderId);
   const formList = document.getElementById(formListId);
@@ -73,7 +76,47 @@ function setupSlider(sliderId, prevBtnId, nextBtnId, formListId) {
   startAutoSlide();
 }
 
-// Call the setupSlider function for each slider
 setupSlider("slider1", "prev1", "next1", "formList");
 setupSlider("slider2", "prev2", "next2", "formList2");
 setupSlider("slider3", "prev3", "next3", "formList3");
+
+
+
+// ==============List SLIDER===============
+
+document.addEventListener("DOMContentLoaded", function () {
+  const listSlider = document.getElementById("listSlider");
+  const showAllButton = document.getElementById("showAllButton");
+  const listItems = listSlider.getElementsByTagName("li");
+
+  function showAllItems() {
+      for (let i = 0; i < listItems.length; i++) {
+          listItems[i].style.display = "block";
+      }
+  }
+
+  showAllButton.addEventListener("click", showAllItems);
+
+  function hideAllItems() {
+      for (let i = 0; i < listItems.length; i++) {
+          listItems[i].style.display = "none";
+      }
+  }
+
+  hideAllItems(); 
+
+  let currentIndex = 0;
+
+  function slideItems() {
+      hideAllItems(); 
+
+      listItems[currentIndex].style.display = "block";
+      currentIndex++;
+
+      if (currentIndex >= listItems.length) {
+          currentIndex = 0;
+      }
+  }
+  slideItems();
+});
+
