@@ -76,6 +76,22 @@ function setupSlider(sliderId, prevBtnId, nextBtnId, formListId) {
   startAutoSlide();
 }
 
+
+}
+
+
+
+
+document.getElementById('next-search').onclick = function() {
+    const widthItem = document.querySelector('.item-search').offsetWidth;
+    document.getElementById('formList-search').scrollLeft += widthItem;
+}
+document.getElementById('prev-search').onclick = function() {
+    const widthItem = document.querySelector('.item-search').offsetWidth;
+    document.getElementById('formList-search').scrollLeft -= widthItem;
+
+}
+
 setupSlider("slider1", "prev1", "next1", "formList");
 setupSlider("slider2", "prev2", "next2", "formList2");
 setupSlider("slider3", "prev3", "next3", "formList3");
