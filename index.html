@@ -39,12 +39,23 @@
                 </li>
             </ul>
         </nav>
-        <button class="join_us" data-toggle="modal" data-target="#staticBackdrop">
-            <a href="" data-toggle="modal" data-target="#exampleModal">
-                <img src="./assets/img/user.svg" alt="">
-                <span>Join us</span>
-            </a>
+        <button class="join_us">
+            <img src="./assets/img/user.svg" alt="">
+            Join us
         </button>
+        <div id="modal_body" class="modal_body">
+            <div class="modal_main">
+                <p class="modal_head_title">Join Us</p>
+                <form class="modal_form" action="">
+                    <div class="modal_form_input_group">
+                        <input placeholder="Full name" class="modal_input" type="text">
+                        <input placeholder="Email" class="modal_input" type="text">
+                    </div>
+                    <button class="modal_join_btn">Join</button>
+                </form>
+            </div>
+        </div>
+
         <div class="hamb_menu">
             <div id="list_icon" class="list_icon">
                 <img src="./assets/img/listIcon.svg" alt=" " />
@@ -80,7 +91,8 @@
             <div class="first_section ">
                 <div class="first_text ">
                     <h2>Books from A to Z</h2>
-                    <p>In our store you can find a book for every taste. A large assortment. Nice prices.Interesting stories.
+                    <p>In our store you can find a book for every taste. A large assortment. Nice prices.Interesting
+                        stories.
                     </p>
                     <button><a href="catalog.html ">Go to
                             catalog</a></button>
@@ -147,8 +159,12 @@
         </section>
         <article class="home_first_article ">
             <h3>Delivery</h3>
-            <p>We work without holidays and weekends! Residents of Kiev can receive an order on the day of its registration. Customers from other cities of Ukraine can receive an order within 1-5 days, depending on the location of the settlement and the
-                selected delivery method. Orders over UAH 1000 are delivered free of charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order basket, aafter selecting the delivery city.More details</p>
+            <p>We work without holidays and weekends! Residents of Kiev can receive an order on the day of its
+                registration. Customers from other cities of Ukraine can receive an order within 1-5 days, depending on
+                the location of the settlement and the
+                selected delivery method. Orders over UAH 1000 are delivered free of charge *. You can see the available
+                methods, exact terms and cost of delivery during checkout in the order basket, aafter selecting the
+                delivery city.More details</p>
         </article>
         <!-- !SOCIAL-COMPONENT -->
         <section class="social_media ">
@@ -196,27 +212,27 @@
                 <p>+38 (071) 339-16-26</p>
                 <button>Request a call </button>
             </div>
-            <div class="footer_list_link ">
-                <ul class="footer_nav ">
+            <div class=" footer_list_link ">
+                <ul class=" footer_nav ">
                 <li>
-                    <a href="./index.html "> Home </a>
+                    <a href=" ./index.html "> Home </a>
                 </li>
                 <li>
-                    <a href="./assets/catologPage.html "> Catalog </a>
+                    <a href=" ./assets/catologPage.html "> Catalog </a>
                 </li>
                 <li>
-                    <a href="./assets/about.html "> About Store</a>
+                    <a href=" ./assets/about.html "> About Store</a>
                 </li>
                 <li>
-                    <a href="./assets/contact.html "> Contact Us </a>
+                    <a href=" ./assets/contact.html "> Contact Us </a>
                 </li>
                 <li>
-                    <a href="./assets/searchPage.html "> Search </a>
+                    <a href=" ./assets/searchPage.html "> Search </a>
                 </li>
                 </ul>
             </div>
         </div>
-        <div class="footer_mobile_info ">
+        <div class=" footer_mobile_info ">
             <p>Library BookStore EACamp</p><br>
             <span>© 2003-2021</span>
 
@@ -227,7 +243,8 @@
         </footer>
     <!-- !FOOTER-COMPONENT END-->
 
-    <script src="./assets/js/hamb.js "></script>
+    <script src=" ./assets/js/hamb.js "></script>
+    <script src=" ./assets/js/modal.js "></script>
     <!-- <script>
         let a =
             100 *
