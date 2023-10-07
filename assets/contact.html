@@ -14,8 +14,8 @@
         <div class="header_logo">
             <img src="./img/book.svg" alt="">
             <h2><b>LIBRARY</b><br><span>
-                book store
-            </span></h2>
+                    book store
+                </span></h2>
         </div>
         <nav>
             <ul class="ul_list">
@@ -36,12 +36,22 @@
                 </li>
             </ul>
         </nav>
-        <button class="join_us" data-toggle="modal" data-target="#staticBackdrop">
-        <a href="" data-toggle="modal" data-target="#exampleModal">
+        <button class="join_us">
             <img src="./img/user.svg" alt="">
-            <span>Join us</span>
-        </a>
-    </button>
+            Join us
+        </button>
+        <div id="modal_body" class="modal_body">
+            <div class="modal_main">
+                <p class="modal_head_title">Join Us</p>
+                <form class="modal_form" action="">
+                    <div class="modal_form_input_group">
+                        <input placeholder="Full name" class="modal_input" type="text">
+                        <input placeholder="Email" class="modal_input" type="text">
+                    </div>
+                    <button class="modal_join_btn">Join</button>
+                </form>
+            </div>
+        </div>
         <div class="hamb_menu">
             <div id="list_icon" class="list_icon">
                 <img src="./img/listIcon.svg" alt=" " />
@@ -77,20 +87,21 @@
     <main>
         <section class="input_section">
             <h2 class="contact_us">Contact Us</h2>
-            <div class="all_inputs"> 
+            <div class="all_inputs">
                 <div class="inputs">
-                    <input type="text" name="" id="" placeholder="Full Name" class="contact_input">
-                    <input type="text" name="" id="" placeholder="Email" class="contact_input">
+                    <input type="text" name="" id="contact_fullname" placeholder="Full Name" class="contact_input">
+                    <input type="text" name="" id="contact_email" placeholder="Email" class="contact_input">
                 </div>
                 <div class="inputs">
-                    <input type="text" name="" id="" placeholder="Address" class="contact_input adress_input">
-                    <input type="number" name="" id="" placeholder="Phone" class="contact_input adress_input input_phone">
+                    <input type="text" name="" id="contact_adress" placeholder="Address" class="contact_input adress_input">
+                    <input type="number" name="" id="contact_phone" placeholder="Phone"
+                        class="contact_input adress_input input_phone">
                 </div>
                 <div class="inputs">
-                    <input type="text" name="" id="" placeholder="Note" class="input_message adress_input">
+                    <input type="text" name="" id="contact_note" placeholder="Note" class="input_message adress_input">
                 </div>
             </div>
-            <div class="send_btn">
+            <div class="send_btn" id="send_btn">
                 <button>Send</button>
             </div>
         </section>
@@ -144,27 +155,27 @@
                     <p>+38 (071) 339-16-26</p>
                     <button>Request a call </button>
                 </div>
-                <div class="footer_list_link ">
-                    <ul class="footer_nav ">
+                <div class=" footer_list_link ">
+                    <ul class=" footer_nav ">
                         <li>
-                            <a href="../index.html "> Home </a>
+                            <a href=" ../index.html "> Home </a>
                         </li>
                         <li>
-                            <a href="./catologPage.html "> Catalog </a>
+                            <a href=" ./catologPage.html "> Catalog </a>
                         </li>
                         <li>
-                            <a href="./about.html "> About Store</a>
+                            <a href=" ./about.html "> About Store</a>
                         </li>
                         <li>
-                            <a href="./contact.html "> Contact Us </a>
+                            <a href=" ./contact.html "> Contact Us </a>
                         </li>
                         <li>
-                            <a href="./searchPage.html "> Search </a>
+                            <a href=" ./searchPage.html "> Search </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="footer_mobile_info ">
+            <div class=" footer_mobile_info ">
                 <p>Library BookStore EACamp</p><br>
                 <span>© 2003-2021</span>
     
@@ -174,7 +185,11 @@
     
             </footer>
         <!-- !FOOTER-COMPONENT END-->
-    <script src="./js/hamb.js "></script>
+           
+    <script src=" ./js/hamb.js "></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/contact.js"></script>
+
     
 </body>
 </html>

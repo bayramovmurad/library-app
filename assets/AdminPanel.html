@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <title>Admin Panel</title>
 </head>
@@ -145,28 +146,28 @@
                         </div>
 
                         <div>
-                            <button class="input_book_button type=" submit ">Add</button>
+                            <button class="input_book_button" type="submit">Add</button>
                         </div>
                     </div>
                 </form>
 
 
-                <section class=" about-store ">
+                <section class="about-store">
                     <h4>About Store</h4>
-                    <div class=" about-store-container ">
+                    <div class="about-store-container">
                         <div>
                             <p>Title</p>
-                            <input type=" text ">
+                            <input class="about_title" type="text">
                         </div>
                         <div>
                             <p>Book Image Url</p>
-                            <input type=" text ">
+                            <input class="about_img" type="text">
                         </div>
                         <div>
                             <p>Description</p>
-                            <input style=" height: 89px; " type=" text ">
+                            <input class="about_desc"  style="height: 89px;" type="text">
                         </div>
-                        <div>
+                        <div class="about_info_add">
                             <button>About info add</button>
                         </div>
                     </div>
@@ -174,35 +175,21 @@
 
             </section>
 
-            <section class=" join-us ">
+            <section class="join-us">
                 <h5>Join Us</h5>
-                <div class=" join-us-table ">
+                <div class="join-us-table">
                     <table>
+                       <thead>
                         <tr>
                             <th>#</th>
                             <th>Full Name</th>
                             <th>Email Address</th>
                         </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Audrey Mckinney</td>
-                            <td>lisa.watson@example.com</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Savannah Howard</td>
-                            <td>jeff.brown@example.com</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Morris Cooper</td>
-                            <td>terra.hamilton@example.com</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Victoria Lane</td>
-                            <td>deanna.curtis@example.com</td>
-                        </tr>
+                       </thead>
+                       <tbody class="join-tbody">
+
+                       </tbody>
+                      
                     </table>
                 </div>
             </section>
@@ -242,6 +229,7 @@
                 <p>Contact Us</p>
                 <div class=" table-content ">
                     <table>
+                       <thead>
                         <tr>
                             <th>#</th>
                             <th>Full Name</th>
@@ -249,34 +237,10 @@
                             <th>Email Address</th>
                             <th>Phone Number</th>
                         </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Audrey Mckinney</td>
-                            <td>1473 Ranchview Dr undefined San Jose</td>
-                            <td>lisa.watson@example.com</td>
-                            <td>(209) 555-0104</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Savannah Howard</td>
-                            <td>8445 Railroad St undefined Tampa</td>
-                            <td>jeff.brown@example.com</td>
-                            <td>(201) 555-0124</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Morris Cooper</td>
-                            <td>8584 W Sherman Dr undefined Desoto</td>
-                            <td>terra.hamilton@example.com</td>
-                            <td>(505) 555-0125</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Victoria Lane</td>
-                            <td>1921 Ranchview Dr undefined San Francisco</td>
-                            <td>deanna.curtis@example.com</td>
-                            <td>(704) 555-0127</td>
-                        </tr>
+                       </thead>
+                       <tbody id="contact_tbody">
+
+                       </tbody>
                     </table>
                 </div>
             </section>
@@ -284,24 +248,11 @@
 
     </main>
 
-    <script type='module'>
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from " https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js ";
-        import { getDatabase } from " https://www.gstatic.com/firebasejs/10.4.0/firabse-database.js ";
-        // TODO: Add SDKs for Firebase products that you want to use // https://firebase.google.com/docs/web/setup#available-libraries // Your web app 's Firebase configuration
-        const firebaseConfig = {
-            apiKey: " AIzaSyBPpBEJBpcRwZxwpV7xrH6KvN8xG3if84k ",
-            authDomain: " library-app-419d1.firebaseapp.com ",
-            projectId: " library-app-419d1 ",
-            storageBucket: " library-app-419d1.appspot.com ",
-            messagingSenderId: " 994823770626 ",
-            appId: " 1:994823770626:web:5f7de5fb8491e1df468d1b "
-        };
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const database = getDatabase(app);
-        console.log(database);
-    </script>
-    <script src=" ./js/admin.js "></script>
+   
+    <script src="./js/admin.js"></script>
+    <script type="module" src="./js/about.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/contact.js"></script>
 </body>
+
 </html>

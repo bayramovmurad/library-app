@@ -1,3 +1,6 @@
+
+
+
 .First-login {
     background-color: var(--red);
     padding-bottom: 695px;
@@ -407,6 +410,7 @@ th {
     /* border: 1px solid black; */
     font-family: Nunito Sans;
     vertical-align: middle;
+    height: 48px;
     box-shadow: 0px -1px 0px 0px #e6e7e9 inset;
 }
 
@@ -489,7 +493,6 @@ th {
     max-width: 1086px;
     width: 100%;
     text-align: center;
-    height: 240px;
     font-family: Nunito Sans;
     font-size: 14px;
     font-weight: 400;
@@ -501,7 +504,7 @@ th {
 #Second-panel .table-content table th {
     background-color: #720418;
     color: #ffff;
-    height: 48px;
+    height: 48px !important;
 }
 
 #Second-panel .table-content table tr:nth-of-type(even) {

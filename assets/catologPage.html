@@ -39,12 +39,22 @@
                 </li>
             </ul>
         </nav>
-        <button class="join_us" data-toggle="modal" data-target="#staticBackdrop">
-            <a href="" data-toggle="modal" data-target="#exampleModal">
-                <img src="./img/user.svg" alt="">
-                <span>Join us</span>
-            </a>
+        <button class="join_us">
+            <img src="./img/user.svg" alt="">
+            Join us
         </button>
+        <div id="modal_body" class="modal_body">
+            <div class="modal_main">
+                <p class="modal_head_title">Join Us</p>
+                <form class="modal_form" action="">
+                    <div class="modal_form_input_group">
+                        <input placeholder="Full name" class="modal_input" type="text">
+                        <input placeholder="Email" class="modal_input" type="text">
+                    </div>
+                    <button class="modal_join_btn">Join</button>
+                </form>
+            </div>
+        </div>
         <div class="hamb_menu">
             <div id="list_icon" class="list_icon">
                 <img src="./img/listIcon.svg" alt=" " />
@@ -80,283 +90,283 @@
         <section class="catalog">
             <div class="catalog_title">
                 <div class="catalog_menu">
-                <h2>All Books</h2>
+                    <h2>All Books</h2>
 
 
-                <div class="slider-container">
-                    <div class="btn-box">
-                        <button id="showAllButton">All</button>
-                    </div>
-                    <div class="slider_list">
-                    <ul class="catalog_list" id="listSlider">
-                        <li><a href="">Fantastic</a></li>
-                        <li><a href="">Dedective</a></li>
-                        <li><a href="">Baby</a></li>
-                        <li><a href="">Self-improvement</a></li>
-                        <li><a href="">Baby</a></li>
-                        <li><a href="">Classic</a></li>
-                        <li><a href="">Baby</a></li>
-                        <li><a href="">Classic</a></li>
-                    </ul>
-                </div>    
-                </div>
-                </div>
-
-
-            </div>
-        
-        <div class="slider" id="slider1">
-            <div class="direction">
-                <img id="prev1" src="./img/prev-arrow.svg" alt="">
-            </div>
-            <div id="formList">
-                <div id="list">
-                    <div class="item">
-                        <span class="new_icon">
-                            <img src="./img/new.svg" alt=""/>
-                        </span>
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                    <div class="slider-container">
+                        <div class="btn-box">
+                            <button id="showAllButton">All</button>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="slider_list">
+                            <ul class="catalog_list" id="listSlider">
+                                <li><a href="">Fantastic</a></li>
+                                <li><a href="">Dedective</a></li>
+                                <li><a href="">Baby</a></li>
+                                <li><a href="">Self-improvement</a></li>
+                                <li><a href="">Baby</a></li>
+                                <li><a href="">Classic</a></li>
+                                <li><a href="">Baby</a></li>
+                                <li><a href="">Classic</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="direction">
-                <img id="next1" src="./img/next-arrow.svg" alt="">
-            </div>
-          </div>
 
 
-
-          <div class="slider_title">
-            <h2>Bestseller</h2>
-          </div>
-          <div class="slider" id="slider2">
-            <div class="direction">
-                <img id="prev2" src="./img/prev-arrow.svg" alt="">
             </div>
-            <div id="formList2">
-                <div id="list2">
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+
+            <div class="slider" id="slider1">
+                <div class="direction">
+                    <img id="prev1" src="./img/prev-arrow.svg" alt="">
+                </div>
+                <div id="formList">
+                    <div id="list">
+                        <div class="item">
+                            <span class="new_icon">
+                                <img src="./img/new.svg" alt="" />
+                            </span>
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="direction">
+                    <img id="next1" src="./img/next-arrow.svg" alt="">
+                </div>
             </div>
-            <div class="direction">
-                <img id="next2" src="./img/next-arrow.svg" alt="">
-            </div>
-          </div>
 
 
 
-          <div class="slider_title">
-            <h2>New releases</h2>
-          </div>
-          <div class="slider" id="slider3">
-            <div class="direction">
-                <img id="prev3" src="./img/prev-arrow.svg" alt="">
+            <div class="slider_title">
+                <h2>Bestseller</h2>
             </div>
-            <div id="formList3">
-                <div id="list3">
-                    <div class="item">
-                        <span class="new_icon">
-                            <img src="./img/new.svg" alt=""/>
-                        </span>
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+            <div class="slider" id="slider2">
+                <div class="direction">
+                    <img id="prev2" src="./img/prev-arrow.svg" alt="">
+                </div>
+                <div id="formList2">
+                    <div id="list2">
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <span class="new_icon">
-                            <img src="./img/new.svg" alt=""/>
-                        </span>
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <span class="new_icon">
-                            <img src="./img/new.svg" alt=""/>
-                        </span>
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/slider-book.svg" class="avatar">
-                        <div class="content-slider">
-                            <h2>Order in Chaos</h2>
-                            <p>Konstantin Koptelov</p>
-                            <button>Read more</button>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="direction">
+                    <img id="next2" src="./img/next-arrow.svg" alt="">
+                </div>
             </div>
-            <div class="direction">
-                <img id="next3" src="./img/next-arrow.svg" alt="">
+
+
+
+            <div class="slider_title">
+                <h2>New releases</h2>
             </div>
-          </div>
+            <div class="slider" id="slider3">
+                <div class="direction">
+                    <img id="prev3" src="./img/prev-arrow.svg" alt="">
+                </div>
+                <div id="formList3">
+                    <div id="list3">
+                        <div class="item">
+                            <span class="new_icon">
+                                <img src="./img/new.svg" alt="" />
+                            </span>
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="new_icon">
+                                <img src="./img/new.svg" alt="" />
+                            </span>
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="new_icon">
+                                <img src="./img/new.svg" alt="" />
+                            </span>
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/slider-book.svg" class="avatar">
+                            <div class="content-slider">
+                                <h2>Order in Chaos</h2>
+                                <p>Konstantin Koptelov</p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="direction">
+                    <img id="next3" src="./img/next-arrow.svg" alt="">
+                </div>
+            </div>
 
 
         </section>
@@ -374,7 +384,7 @@
         </div>
     </section>
 
-    
+
     <footer>
         <div class="footer_container ">
             <div class="footer_logo">
@@ -447,8 +457,9 @@
                 1440
             console.log(a.toFixed(2))
         </script>
-        <script src="./js/hamb.js"></script>
-        <script src="./js/slider.js"></script>
+        <script src=" ./js/hamb.js "></script>
+            <script type="module" src="./js/modal.js"></script>
+        <script src=" ./js/slider.js "></script>
 </body>
 
 </html>
