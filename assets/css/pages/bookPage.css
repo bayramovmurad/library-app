@@ -181,7 +181,7 @@
 }
 
 .commit div{
-    /* display: flex; */
+    display: flex;
     /* gap: 30px; */
 }
 

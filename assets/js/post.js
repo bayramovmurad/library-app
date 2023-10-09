@@ -1,3 +1,4 @@
+
 const postInput = document.getElementById("postInput");
 const shareBtn = document.getElementById("shareBtn");
 const commentsContainer = document.getElementById("commentsContainer");
@@ -6,38 +7,28 @@ const apiUrl = "https://blog-api-t6u0.onrender.com/posts/";
 
 
 function createComment(text, time) {
-    const commentItem = document.createElement("li");
-    commentItem.classList.add("userComment");
+  const commentItem = document.createElement("li");
+  commentItem.classList.add("userComment");
 
-    const pAuthor = document.createElement("p");
-    pAuthor.textContent = "Anonym";
+  const pAuthor = document.createElement("p");
+  pAuthor.textContent = "Anonym";
 
-    const spanTime = document.createElement("span");
-    spanTime.textContent = formatTimeToDisplay(time);
+  const spanTime = document.createElement("span");
+  spanTime.textContent = formatTimeToDisplay(time);
 
-    const pText = document.createElement("p");
-    pText.textContent = text;
+  const pText = document.createElement("p");
+  pText.textContent = text;
 
-    commentItem.appendChild(pAuthor);
-    commentItem.appendChild(spanTime);
-    commentItem.appendChild(pText);
+  commentItem.appendChild(pAuthor);
+  commentItem.appendChild(spanTime);
+  commentItem.appendChild(pText);
 
-    return commentItem;
+  return commentItem;
 }
 
 
-//---------------------Local Storage--------------//
+//-------------------Format Time-----------//
 
-function saveCommentsToLocalStorage(comments) {
-  localStorage.setItem("comments", JSON.stringify(comments));
-}
-
-function getCommentsFromLocalStorage() {
-  const storedComments = localStorage.getItem("comments");
-  return storedComments ? JSON.parse(storedComments) : [];
-}
-
-//---------------------Time Format--------------//
 function formatTimeToDisplay(date) {
   const currentTime = new Date();
   const currentDate = new Date(date);
@@ -55,17 +46,8 @@ function formatTimeToDisplay(date) {
   }
 }
 
-window.onload = function () {
-  const comments = getCommentsFromLocalStorage();
-  comments.forEach((comment) => {
-    const newCommentList = createComment(comment.text, comment.time);
-    commentsContainer.appendChild(newCommentList);
-  });
-};
 
-
-//---------------------Buttons--------------//
-
+//-------------------Buttons-----------//
 shareBtn.addEventListener("click", function () {
   const commentText = postInput.value.trim();
   if (commentText !== "") {
@@ -73,10 +55,6 @@ shareBtn.addEventListener("click", function () {
     const newCommentList = createComment(commentText, currentTime);
     commentsContainer.appendChild(newCommentList);
     postInput.value = "";
-
-    const comments = getCommentsFromLocalStorage();
-    comments.push({ text: commentText, time: currentTime });
-    saveCommentsToLocalStorage(comments);
   }
 });
 
@@ -89,8 +67,7 @@ postInput.addEventListener("keydown", function (e) {
 
 
 
-
-//---------------------API METHOD--------------//
+//-------------------API Method-----------//
 async function getPosts() {
   try {
     const response = await fetch(apiUrl, {
@@ -117,6 +94,24 @@ async function createPost(form) {
   } catch (error) {
     console.error("Error: " + error);
   }
+}
+
+window.onload = async function () {
+  const posts = await getPosts();
+  renderPosts(posts);
+};
+
+function renderPosts(posts) {
+  const commentsList = commentsContainer.querySelector("ul"); 
+
+  commentsList.innerHTML = '';
+  posts
+    .filter((el) => el.id > 100)
+    .reverse()
+    .forEach((el) => {
+      const commentItem = createComment(el.text, el.time);
+      commentsList.appendChild(commentItem);
+    });
 }
 
 
