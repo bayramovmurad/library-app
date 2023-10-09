@@ -136,6 +136,7 @@
     border-radius: 5px;
     border: none;
     box-shadow: 0px 0px 10px 1px #00000026;
+    padding: 10px;
 }
 
 .commit_parent div:first-child {
@@ -167,8 +168,8 @@
 }
 
 .commit {
-    max-width: 686px;
-    min-height: 167;
+    /* max-width: 686px;
+    min-height: 167; */
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px #0000001A;
     margin-bottom: 43px;
@@ -179,8 +180,8 @@
     box-sizing: border-box;
 }
 
-.commit div {
-    display: flex;
+.commit div{
+    /* display: flex; */
     /* gap: 30px; */
 }
 
@@ -281,3 +282,4 @@
         right: 5; */
     }
 }
+
