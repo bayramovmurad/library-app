@@ -1,9 +1,49 @@
-
 const postInput = document.getElementById("postInput");
 const shareBtn = document.getElementById("shareBtn");
-const commentsContainer = document.getElementById("commentsContainer");
+const commentsList = document.getElementById("commentsList");
 const apiUrl = "https://blog-api-t6u0.onrender.com/posts/";
 
+//-------------------API Method-----------//
+
+async function getPosts() {
+  try {
+    let response = await fetch(apiUrl, {
+      method: "GET",
+    });
+    let data = await response.json();
+    return data;
+  } catch (error) {
+    console.log("Error: " + error);
+  }
+}
+
+// POST function
+async function postComment(form) {
+  try {
+    let response = await fetch(apiUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
+    let data = await response.json();
+    return data;
+  } catch (error) {
+    console.log("Error: " + error);
+  }
+}
+
+window.onload = async function () {
+  console.log("Page loaded"); 
+  try {
+    const posts = await getPosts();
+    console.log("Posts retrieved:", posts); 
+    renderComments(posts); 
+  } catch (error) {
+    console.error("Error on page load:", error); 
+  }
+};
 
 
 function createComment(text, time) {
@@ -11,7 +51,7 @@ function createComment(text, time) {
   commentItem.classList.add("userComment");
 
   const pAuthor = document.createElement("p");
-  pAuthor.textContent = "Anonym";
+  pAuthor.textContent = "Anonymous";
 
   const spanTime = document.createElement("span");
   spanTime.textContent = formatTimeToDisplay(time);
@@ -25,7 +65,6 @@ function createComment(text, time) {
 
   return commentItem;
 }
-
 
 //-------------------Format Time-----------//
 
@@ -46,15 +85,18 @@ function formatTimeToDisplay(date) {
   }
 }
 
-
 //-------------------Buttons-----------//
-shareBtn.addEventListener("click", function () {
+
+shareBtn.addEventListener("click", async function () {
   const commentText = postInput.value.trim();
   if (commentText !== "") {
     const currentTime = new Date();
-    const newCommentList = createComment(commentText, currentTime);
-    commentsContainer.appendChild(newCommentList);
+    const newComment = createComment(commentText, currentTime);
+    commentsList.appendChild(newComment); 
     postInput.value = "";
+
+    
+    await postComment({ text: commentText, timestamp: currentTime });
   }
 });
 
@@ -65,53 +107,18 @@ postInput.addEventListener("keydown", function (e) {
   }
 });
 
+async function renderComments(posts) {
 
+  commentsList.innerHTML = "";
 
-//-------------------API Method-----------//
-async function getPosts() {
-  try {
-    const response = await fetch(apiUrl, {
-      method: "GET",
-    });
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error("Error: " + error);
-  }
-}
+  
+  const comments = await getPosts();
 
-async function createPost(form) {
-  try {
-    const response = await fetch(apiUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(form),
-    });
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error("Error: " + error);
-  }
-}
-
-window.onload = async function () {
-  const posts = await getPosts();
-  renderPosts(posts);
-};
-
-function renderPosts(posts) {
-  const commentsList = commentsContainer.querySelector("ul"); 
-
-  commentsList.innerHTML = '';
-  posts
-    .filter((el) => el.id > 100)
-    .reverse()
-    .forEach((el) => {
-      const commentItem = createComment(el.text, el.time);
-      commentsList.appendChild(commentItem);
+  comments
+    .filter((item) => item.id > 100) 
+    .reverse() 
+    .forEach((item) => {
+      const newComment = createComment(item.text, item.timestamp);
+      commentsList.appendChild(newComment);
     });
 }
-
-
