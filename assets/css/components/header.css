@@ -142,7 +142,7 @@
 }
 
 .modal_main {
-    width: 46.88%;
+    width: 675px;
     background: #fff;
     padding: 70px 55.6px 35px 55.6px;
     display: flex;
@@ -210,6 +210,19 @@
     cursor: pointer;
 }
 
+/* ! responsive-modal */
+@media screen and (max-width:991px){
+    .modal_main {
+            width: 475px;
+            
+        }
+}
+@media screen and (max-width:500px) {
+    .modal_main {
+        width: 375px;
+
+    }
+}
 
 /*! responsive */
 

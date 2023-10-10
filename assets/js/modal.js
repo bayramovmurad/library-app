@@ -44,7 +44,7 @@ onValue(users, (snapshot) => {
     const data = snapshot.val();
     let dataToArr = Object.entries(data)
     let dataItem = dataToArr.map((item) => `
-         <tr>
+         <tr class="user-table">
             <td>${id++}</td>
             <td>${item[1].fullname}</td>
             <td>${item[1].email}</td>

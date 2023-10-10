@@ -1,599 +1,778 @@
-
-
-
-.First-login {
+/* ! admin */
+.first_login {
     background-color: var(--red);
-    padding-bottom: 695px;
-}
-
-#header_admin_logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 85px 0 129px 32px;
-}
-
-.logo-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-content h2 {
-    font-family: var(--montserrat);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    color: #ffff;
-}
-
-.logo-content .logo-line {
-    width: 202.76px;
-    border: 1px solid #ffffff96;
-    margin: 6px 0 4px;
-}
-
-.logo-content .logo-title {
-    font-family: var(--montserrat);
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 196.187%;
-    color: #ffff;
-}
-
-#Login .login-container {
-    max-width: 662px;
     width: 100%;
-    background-color: #ffff;
-    padding: 70px 54px 34px;
-    margin: 0 auto;
+    height: 100vh;
+    position: relative;
 }
 
-#Login .login-container .form p {
+.d-none {
+    display: none;
+}
+
+.first_login main {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 70px;
+}
+
+.first_login main .admin_form_container {
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 662px;
+    height: 544px;
+
+}
+
+.first_login main h2 {
+    padding: 69px 0px 17px 0px;
+    color: var(--black);
+    text-align: center;
     font-family: var(--montserrat);
     font-size: 44px;
+    font-style: normal;
     font-weight: 700;
-    text-align: center;
-    margin-bottom: 26px;
-    color: #000000;
+    line-height: normal;
 }
 
-#Login .login-container .form {
-    display: flex;
-    flex-direction: column;
-}
-
-#Login .login-container .form input {
-    height: 74.54px;
+.first_login main form input {
+    width: 553px;
+    height: 74px;
+    padding-left: 51px;
     margin-bottom: 34px;
-    border: 1px solid #cecece;
 }
 
-#Login .login-container .form input::placeholder {
-    font-family: Crimson Text;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 25px;
-    text-align: left;
-    padding-left: 54px;
-}
 
-#Login .login-container .form button {
-    border: 1px solid #cecece;
-    background-color: #e16a00;
-    padding: 22px 0;
-    font-family: Crimson Text;
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 25px;
+.first_login main form button {
+    margin-top: 50px;
+    width: 553px;
+    height: 74px;
     text-align: center;
-    color: #ffffff;
+    color: var(--white);
+    font-family: var(--crimson);
+    background-color: var(--orange);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 5px;
+    border: 1px solid #CECECE;
+
 }
 
+/* !admin end */
 
-/* Second Panel */
-
-#Second-panel {
-    display: flex;
-    /* position: relative; */
+.overflow-admin {
+    overflow: hidden !important;
 }
 
-#second_admin_logo {
-    /* display: flex;
-  align-items: center;
-  gap: 8px; */
-    padding: 106px 35px 26px;
-}
+/* ! left link*/
 
-#Second-panel .left {
-    max-width: 355px;
-    width: 100%;
-    height: 100%;
+
+.left_link {
     background-color: var(--red);
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
+    min-width: 355px;
+    padding-left: 35px;
 }
 
-#Second-panel .left aside div {
-    display: flex;
-    gap: 8px;
+#second_admin_logo img {
+    min-width: 283px;
+    min-height: 106px;
+    padding-top: 93px;
 }
 
-#Second-panel .right {
-    padding-left: 355px;
-    flex-basis: 100%;
-    background-color: var(--pinks);
-}
-
-#Second-panel .left aside .list {
-    padding: 20px 0 0 41px;
-}
-
-#Second-panel .left aside .list ul li {
+.nav_list_link li {
     display: flex;
     align-items: center;
     gap: 11px;
-    margin-bottom: 34px;
+    margin-bottom: 20px;
 }
 
-#Second-panel .left aside .list ul li img {
-    width: 32.41px;
-}
-
-#Second-panel .left aside .list ul li a {
+.nav_list_link li a {
+    color: #FFF;
     font-family: var(--montserrat);
     font-size: 18px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 35px;
-    text-align: left;
-    color: #ffff;
+    line-height: 196.187%;
 }
 
-#Second-panel .left aside .list ul li a:hover {
-    color: #ff8b00;
-    transition: 0.7s all;
-    transform: scale(1.1, 1.1);
+.nav_list_link li img {
+    width: 55px;
+    height: 41px;
+}
+
+/* ! left link end*/
+
+/* ! right_side */
+.right_side {
+    margin-left: 33px;
+}
+
+.profile-admin {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: end;
+    margin-right: 58px;
 }
 
 
-/* Second panel Right side */
 
-#Second-panel .right .mobile-container {
-    width: 100%;
+.header-admin-left {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    justify-content: end;
+}
+
+/*! hamb-admin */
+
+.hamb_menu_admin {
     display: none;
-    padding: 16px 29px 40px 13px;
+    margin-right: 13px;
+    z-index: 999;
 }
 
-#Second-panel .right .mobile-header {
+.hamb_list_admin {
+    padding: 43px 11px 43px 0px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    position: fixed;
+    left: -100%;
+    padding-left: 20px;
+
 }
 
-#Second-panel .right .account-logo {
+.hamb_list_admin.show {
+    top: 0;
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 60px 58px 0 0;
+    height: 100%;
+    transition: .6s;
+    left: 0;
+    background: var(--red);
+
 }
 
-#Second-panel .right .profile-admin {
+.hamb_list_admin .times_icon {
+    position: absolute;
+    width: fit-content;
+    margin-right: 4px;
+    right: 50px;
+}
+
+.hamb_list_admin .menu_list {
+    margin-top: 73px;
+}
+
+.menu_nav_admin {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu_nav_admin li {
     display: flex;
     align-items: center;
-    gap: 8.26px;
-    /* position: absolute;
-  right: 58px;
-  top: 60px;
-  margin-bottom: 50px; */
+    gap: 20px;
 }
+
+.menu_nav_admin li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 196.187%;
+    font-family: var(--montserrat);
+}
+
+/*! hamb-admin */
 
 .admin-container {
-    padding: 48px 108px 0 33px;
+    margin-top: 48px;
 }
 
 .admin-container h1 {
+    color: var(--darkBlue);
     font-family: var(--montserrat);
     font-size: 30px;
+    font-style: normal;
     font-weight: 600;
-    color: var(--textcolor);
+    line-height: 196.187%;
 }
 
-.admin-container .search-book p {
+.search-container {
+    margin-top: 26px;
+}
+
+.search-book p {
+    color: var(--darkBlue);
     font-family: var(--montserrat);
     font-size: 18px;
+    font-style: normal;
     font-weight: 600;
-    color: var(--textcolor);
-    margin: 26px 0 6px;
+    line-height: 196.187%;
+
 }
 
-.admin-container .search-bar {
+.search-bar {
     display: flex;
-    align-items: center;
     gap: 7px;
 }
 
-.admin-container .search-bar input {
-    max-width: 395px;
-    width: 100%;
+.search-bar input {
+    width: 395px;
     height: 41px;
-    border: 2px solid #391f007a;
+    flex-shrink: 0;
     border-radius: 34px;
-}
-
-.admin-container .search-bar input::placeholder {
-    padding: 9px 0 10px 33px;
-    font-family: Preah Vihear;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: left;
+    border: 2px solid rgba(57, 31, 0, 0.48);
+    background: var(--white);
+    outline: none;
     color: var(--ininput);
+    font-family: var(--preahvihear);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 33px;
 }
 
-.admin-container .search-bar button {
-    padding: 12px 24px;
+.search-bar button {
     border-radius: 34px;
+    background: var(--orange);
+    width: 63px;
     height: 40px;
-    background-color: var(--orange);
-    border: none;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
+    align-items: center;
+    border: none;
 
-.admin-container .search-history {
-    display: none;
-    max-width: 388px;
-    width: 100%;
-    overflow-y: auto;
-    border-radius: 35px;
-    padding: 20px 36px;
-    margin-top: 6px;
-    background-color: #f1f0f0;
 }
 
 .search-history.active {
     display: block;
 }
 
-.admin-container .search-history div {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    margin-bottom: 13px;
+.search-history {
+    display: none;
+    margin-top: 6px;
+    border-radius: 35px;
+    background: #F1F0F0;
+    width: 388px;
+    max-height: 185px;
+    flex-shrink: 0;
+    padding: 36px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
-.admin-container .search-history p {
-    font-family: Preah Vihear;
+.admin_result_item {
+    color: var(--placeHolder);
+    margin-bottom: 6px;
+    color: var(--ininput);
+    font-family: var(--preahvihear);
     font-size: 14px;
+    font-style: normal;
     font-weight: 400;
-    color: #bcbcbc;
+    line-height: normal;
 }
 
-.admin-container .book-form {
-    padding-top: 81px;
+.book-form {
+    margin-top: 81px;
 }
 
-.admin-container .book-form h3 {
+.book-form h3 {
+    color: var(--textcolor);
     font-family: var(--montserrat);
     font-size: 18px;
+    font-style: normal;
     font-weight: 600;
-    text-align: left;
-    margin-bottom: 18px;
+    line-height: 196.187%;
+
 }
 
-.admin-container .book-form-container {
-    width: 100%;
-    padding: 16px 30px 30px;
+.book-form-container {
     border-radius: 20px;
-    background-color: #ffff;
+    background: #FFF;
+    display: flex;
+    width: 1107px;
+    padding: 16px 30px 30px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
 }
 
-.admin-container .book-form-container div {
-    margin-bottom: 24px;
-}
-
-.admin-container .book-form-container div p {
-    font-family: var(--roboto);
-    font-size: 16px;
-    font-weight: 400;
-    text-align: left;
-    color: var(--bookname2);
+.book-form-container div p {
     margin-bottom: 10px;
 }
 
-.admin-container .book-form-container div input {
-    width: 100%;
+.book-form-container div input {
+    display: flex;
+    height: 40px;
     padding: 8px 12px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    width: 1023px;
     border-radius: 10px;
-    border: 1px solid #e2e6ee;
+    border: 1px solid #E2E6EE;
+    background: #FFF;
     box-shadow: 0px 4px 18px 0px rgba(158, 168, 189, 0.31);
+    outline: none;
 }
 
-.admin-container .book-form-container div button {
-    width: 100%;
-    border: none;
-    padding: 12px 24px;
+.book-form-container .add_book button {
+    text-align: center;
+    height: 40px;
+    gap: 10px;
+    width: 1023px;
     border-radius: 10px;
     background-color: var(--orange);
-    font-family: var(--roboto);
-    font-size: 14px;
-    font-weight: 400;
+    border: none;
     color: var(--white);
 }
 
-.admin-container .about-store {
-    padding-top: 161px;
+.about-store {
+    margin-top: 161px;
+
 }
 
-.admin-container .about-store h4 {
+.about-store h4 {
+    color: var(--textcolor);
     font-family: var(--montserrat);
     font-size: 30px;
+    font-style: normal;
     font-weight: 600;
-    text-align: left;
-    margin-bottom: 18px;
+    margin-bottom: 17px;
+
+
 }
 
-.admin-container .about-store-container {
-    width: 100%;
-    padding: 16px 30px 30px;
+.about-store-container {
     border-radius: 20px;
-    background-color: #ffff;
+    background: #FFF;
+    display: flex;
+    width: 1107px;
+    padding: 16px 30px 30px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
 }
 
-.admin-container .about-store-container div {
-    margin-bottom: 24px;
+.about-store-container div input {
+    display: flex;
+    height: 40px;
+    padding: 8px 12px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    width: 1023px;
+    border-radius: 10px;
+    border: 1px solid #E2E6EE;
+    background: #FFF;
+    box-shadow: 0px 4px 18px 0px rgba(158, 168, 189, 0.31);
+    outline: none;
 }
 
-.admin-container .about-store-container div p {
-    font-family: var(--roboto);
-    font-size: 16px;
-    font-weight: 400;
-    text-align: left;
-    color: var(--bookname2);
+.about-store-container div button {
+    text-align: center;
+    height: 40px;
+    gap: 10px;
+    width: 1023px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    border: none;
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.about-store-container div p {
     margin-bottom: 10px;
 }
 
-.admin-container .about-store-container div input {
-    width: 100%;
-    padding: 8px 12px;
-    border-radius: 10px;
-    border: 1px solid #e2e6ee;
-    box-shadow: 0px 4px 18px 0px rgba(158, 168, 189, 0.31);
-}
+/* !join us */
 
-.admin-container .about-store-container div button {
-    width: 100%;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 10px;
-    background-color: var(--orange);
-    font-family: var(--roboto);
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--white);
-}
-
-
-/* Table 1 */
-
-#Second-panel .join-us {
-    padding: 136px 0 136px 70px;
-}
-
-#Second-panel .join-us h5 {
-    font-family: var(--montserrat);
-    font-size: 30px;
-    font-weight: 600;
-    text-align: left;
-    margin-bottom: 18px;
-}
-
-#Second-panel .join-us-table table {
+.join-us {
+    margin-top: 136px;
     max-width: 512px;
     width: 100%;
-    height: 258px;
-    text-align: center;
-    font-family: Nunito Sans;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0.01em;
-    text-align: center;
 }
 
-#Second-panel .join-us-table table,
-td,
-th {
-    /* border: 1px solid black; */
-    font-family: Nunito Sans;
+.join-us h5 {
+    color: var(--darkBlue);
+    font-family: var(--montserrat);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 196.187%;
+}
+
+.join-us-table {
+    margin-top: 10px;
+    width: 100%;
+}
+
+table thead tbody {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+tbody {
+    width: 100%;
+}
+
+.table-id {
+    width: 54px;
+    height: 48px;
+}
+
+.join-us-table table thead tr th {
+    background: var(--red);
+    color: var(--white);
+    height: 48px;
     vertical-align: middle;
-    height: 48px;
-    box-shadow: 0px -1px 0px 0px #e6e7e9 inset;
+
 }
 
-#Second-panel .join-us-table table tr td,
 th {
-    min-width: 54px;
-}
-
-#Second-panel .join-us-table table th {
-    background-color: #720418;
-    color: #ffff;
-}
-
-#Second-panel .join-us-table table tr {
-    border-bottom: #e6e7e9;
-}
-
-#Second-panel .join-us-table table tr:nth-of-type(even) {
-    background-color: #ffff;
-}
-
-#Second-panel .join-us-table table tr:nth-of-type(odd) {
-    background-color: #f9fafc;
-}
-
-
-/* Table 2 */
-
-#Second-panel .books-content {
-    padding: 0 70px 298px;
-}
-
-#Second-panel .books-content h6 {
-    font-family: Montserrat;
-    font-size: 30px;
-    font-weight: 600;
-    text-align: left;
-    margin-bottom: 18px;
-}
-
-#Second-panel .books-table table {
-    max-width: 1086px;
-    width: 100%;
+    color: var(--white);
     text-align: center;
-    height: 97px;
-    font-family: Nunito Sans;
+    font-family: var(--nstino);
     font-size: 14px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0.01em;
-    text-align: center;
+    line-height: 115%;
+    letter-spacing: 0.14px;
 }
 
-#Second-panel .books-table table th {
-    background-color: #720418;
-    color: #ffff;
+td {
+    text-align: center;
+    color: var(--darkBlue);
+    font-family: var(--nstino);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 0.14px;
+}
+
+.user-table td {
+    padding: 16px 0px;
+
+}
+
+tr {
+    background: #FFF;
+    box-shadow: 0px -1px 0px 0px #E6E7E9 inset, 0px 1px 0px 0px #E6E7E9 inset;
+}
+
+tr:nth-child(even) {
+    background-color: #F9FAFC;
+    box-shadow: 0px -1px 0px 0px #E6E7E9 inset, 0px 1px 0px 0px #E6E7E9 inset;
+}
+
+
+/* ! books-content */
+
+.table_scrool {
+
+    overflow-x: scroll !important;
+
+}
+
+.books-content {
+    margin-top: 136px;
+    width: 100%;
+
+
+}
+
+.books-content h6 {
+    color: var(--darkBlue);
+    font-family: var(--montserrat);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 196.187%;
+}
+
+.books-table table thead tr th {
+    background: var(--red);
+    color: var(--white);
     height: 48px;
+    vertical-align: middle;
+
 }
 
-#Second-panel .books-table th {
-    min-width: 30px;
+.book_admin_img {
+    width: 27px;
+    height: 36px;
+}
+
+.book-admin-img {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.books-table {
+   margin-right: 30px;
+}
+.table-content {
+    margin-right: 30px;
 }
 
 
-/* Table 3 */
+.books_tbody tr {
+    max-height: 50px !important;
 
-#Second-panel .Contact-Us {
-    padding: 0 86px 438px 70px;
 }
 
-#Second-panel .Contact-Us p {
+/* ! books-content */
+
+/* !contact */
+
+.Contact-Us {
+    margin: 150px 0px 150px 0px;
+
+}
+
+.Contact-Us p {
+    color: var(--Gray-1, #333);
     font-family: Montserrat;
     font-size: 30px;
+    font-style: normal;
     font-weight: 600;
-    text-align: left;
-    margin-bottom: 18px;
+    line-height: 196.187%;
 }
 
-#Second-panel .table-content table {
-    max-width: 1086px;
-    width: 100%;
-    text-align: center;
-    font-family: Nunito Sans;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0.01em;
-    text-align: center;
+.table-content td {
+    padding: 16px 0px;
+
 }
 
-#Second-panel .table-content table th {
-    background-color: #720418;
-    color: #ffff;
-    height: 48px !important;
-}
-
-#Second-panel .table-content table tr:nth-of-type(even) {
-    background-color: #ffff;
-}
-
-#Second-panel .table-content table tr:nth-of-type(odd) {
-    background-color: #f9fafc;
+.table-content table thead tr th {
+    color: var(--darkBlue);
+    font-family: var(--montserrat);
+    background: var(--red);
+    color: var(--white);
+    height: 48px;
+    vertical-align: middle;
 }
 
 
-/* Responsive Design */
+/* ! right_side end */
 
-@media only screen and (max-width: 600px) {
-    #header_admin_logo {
-        padding: 17px 0 100.42px 12px;
-    }
-    #header_admin_logo img {
-        width: 151.22px;
-    }
-    #Login .login-container {
-        max-width: 229.72px;
-        width: 100%;
-        padding: 27px 18.55px 50.26px;
-    }
-    #Login .login-container .form p {
-        font-size: 20px;
-        width: 152px;
-        margin: 0 auto 26px;
-    }
-    #Login .login-container .form input {
-        height: 40.84px;
-        margin-bottom: 21.99px;
-    }
-    #Login .login-container .form input::placeholder {
-        padding-left: 11.49px;
-        font-size: 16px;
-    }
-    #Login .login-container .form button {
-        height: 30.63px;
+
+
+@media screen and (max-width:1472px) {
+    .book-form-container {
+
         display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 907px;
+        padding: 16px 30px 30px 30px;
+        gap: 24px;
+
     }
-    #Second-panel .left,
-    #Second-panel .right .account-logo {
+
+    .book-form-container div p {
+        margin-bottom: 10px;
+    }
+
+    .book-form-container div input {
+
+        padding: 8px 12px;
+        align-items: center;
+        gap: 10px;
+        width: 823px;
+    }
+
+    .book-form-container .add_book button {
+        width: 823px !important;
+    }
+
+    .about-store-container {
+        display: flex;
+        width: 907px;
+        padding: 16px 30px 30px 30px;
+        gap: 24px;
+    }
+
+    .about-store-container div input {
+        padding: 8px 12px;
+        align-items: center;
+        gap: 10px;
+        width: 823px;
+    }
+
+    .about-store-container div button {
+        width: 823px !important;
+    }
+}
+
+@media screen and (max-width:1320px) {
+
+    .book-form-container {
+
+        display: flex;
+        width: 580px;
+        padding: 16px 30px 30px 30px;
+        gap: 24px;
+
+    }
+
+    .book-form-container div p {
+        margin-bottom: 10px;
+    }
+
+    .book-form-container div input {
+
+        padding: 8px 12px;
+        align-items: center;
+        gap: 10px;
+        width: 500px;
+    }
+
+    .book-form-container .add_book button {
+        width: 500px !important;
+    }
+
+    .about-store-container {
+        display: flex;
+        width: 580px;
+        padding: 16px 30px 30px 30px;
+        gap: 24px;
+    }
+
+    .about-store-container div input {
+        padding: 8px 12px;
+        align-items: center;
+        gap: 10px;
+        width: 500px;
+    }
+
+    .about-store-container div button {
+        width: 500px !important;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+
+    .book-form-container {
+
+        display: flex;
+        width: 380px;
+        padding: 16px 30px 30px 30px;
+        gap: 24px;
+
+    }
+
+    .book-form-container div p {
+        margin-bottom: 10px;
+    }
+
+    .book-form-container div input {
+
+        padding: 8px 12px;
+        align-items: center;
+        gap: 10px;
+        width: 300px;
+    }
+
+    .book-form-container .add_book button {
+        width: 300px !important;
+    }
+
+    .about-store-container {
+        display: flex;
+        width: 380px;
+        padding: 16px 30px 30px 30px;
+        gap: 24px;
+    }
+
+    .about-store-container div input {
+        padding: 8px 12px;
+        align-items: center;
+        gap: 10px;
+        width: 300px;
+    }
+
+    .about-store-container div button {
+        width: 300px !important;
+    }
+    .search-bar input{
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .left_link {
         display: none;
     }
-    #Second-panel .right .mobile-container {
-        display: block;
-    }
-    /* #Second-panel .Contact-Us table {
-    overflow-x: auto;
-  } */
-    #Second-panel .right {
-        padding: 0 7px 0 16px;
-    }
-    .admin-container {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .admin-container h1 {
-        padding-top: 0;
-    }
-    .admin-container .search-container {
+
+    .table_book {
+        max-width: 100%;
         width: 100%;
     }
-    .admin-container .book-form {
-        width: 100%;
-        padding-top: 47px;
+
+    td {
+        vertical-align: middle;
     }
-    .admin-container .about-store {
-        width: 100%;
-        padding-top: 149px;
+
+    .books-table {
+        width: 90vw;
+        overflow-x: scroll;
     }
-    #Second-panel .join-us {
-        width: 100%;
-        padding: 117px 0 190px;
+
+    .table-content {
+        width: 90vw;
+        overflow-x: scroll;
     }
-    #Second-panel .books-content {
-        width: 100%;
-        padding: 0 0 190px;
+
+    #mobil_td {
+        min-width: 199px;
     }
-    #Second-panel .Contact-Us {
-        width: 100%;
-        padding: 0 0 289px;
+
+    .book-desc {
+        max-width: 199px;
+        white-space: nowrap;
+        overflow-x: scroll;
+
+        &&::-webkit-scrollbar {
+            display: none;
+        }
     }
-    .admin-container .book-form-container,
-    .admin-container .about-store-container {
-        width: 100%;
+
+    .id_td {
+        min-width: 54px;
+    }
+}
+
+
+
+/*! responsive */
+
+@media screen and (max-width:991px) {
+    .ul_list {
+        display: none;
+    }
+
+    .hamb_menu_admin {
+        display: flex;
+        align-items: center;
     }
 }

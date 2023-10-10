@@ -54,11 +54,11 @@ onValue(contact, (snapshot) => {
     let contactItem = contactDataToArr.map((item) =>
         `
         <tr>
-            <td>${id++}</td>
-            <td>${item[1].fullName}</td>
-            <td>${item[1].address}</td>
-             <td>${item[1].email}</td>
-            <td>${item[1].phone}</td>
+            <td >${id++}</td>
+            <td id="mobil_td">${item[1].fullName}</td>
+            <td id="mobil_td">${item[1].address}</td>
+             <td id="mobil_td">${item[1].email}</td>
+            <td id="mobil_td">${item[1].phone}</td>
 
         </tr>           
         `

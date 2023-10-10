@@ -1,3 +1,16 @@
+let listIcon = document.getElementById("list_icon")
+let hambListAdmin = document.getElementById("hamb_list_admin")
+let timesIcon = document.getElementById("times_icon")
+listIcon.addEventListener('click', function () {
+    hambListAdmin.classList.add("show")
+})
+
+timesIcon.addEventListener('click', function () {
+    hambListAdmin.classList.remove("show")
+})
+
+
+
 let searchInputAdmin = document.getElementById("search_input_admin");
 let searchInputButton = document.getElementById("seach_input_btn");
 let searchHistory = document.querySelector(".search-history");
@@ -11,7 +24,7 @@ searchInputButton.addEventListener("click", (e) => {
 
 });
 
-const searchData = async(data_name) => {
+const searchData = async (data_name) => {
     const resp = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${data_name}`);
     const data = await resp.json();
     let book_result = data.items.map((data_item) =>
@@ -35,14 +48,19 @@ const inputBookDesc = document.querySelector(".input_book_desc")
 const inputBookType = document.querySelector(".input_book_type")
 const inputBookbutton = document.querySelector(".input_book_button")
 
+let globalData;
 
-const formRegister = async(data_id) => {
+const formRegister = async (data_id) => {
+    
     const resp = await fetch(`https://www.googleapis.com/books/v1/volumes/${data_id}`);
     const data = await resp.json();
-    inputBookName.placeholder = data.volumeInfo.title
-    inputBookAuthor.placeholder = data.volumeInfo.authors[0]
-    inputBookImg.placeholder = data.volumeInfo.infoLink
-    inputBookDesc.placeholder = data.volumeInfo.description
-    inputBookType.placeholder = data.volumeInfo.industryIdentifiers.map((item) => item.type)
+    inputBookName.value = data.volumeInfo.title
+    inputBookAuthor.value = data.volumeInfo.authors[0]
+    inputBookImg.value = data.volumeInfo.imageLinks?.thumbnail;
+    inputBookDesc.value = data.volumeInfo.description
+    inputBookType.value = data.volumeInfo.industryIdentifiers.map((item) => item.type)
+    globalData = data 
+    console.log(globalData);
 
 }
+
