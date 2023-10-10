@@ -120,33 +120,31 @@
 
         </section>
         <section class="commit_parent">
-            <div><input type="text" placeholder="your anonim comment...">
-                <div class="icon"><img src="./img/send.svg" alt="send"></div>
+            <div>
+                <input type="text" id="postInput" placeholder="your anonym comment...">
+                <div class="icon">
+                    <img id="shareBtn" src="./img/send.svg" alt="send">
+                </div>
             </div>
-            <div class="commit">
 
+            
+            <div id="commentsContainer" class="commit">
+                <ul id="commentsList">
+                <!-- <li>
                 <p>anonim</p>
                 <span>18:32 today</span>
-
-
-
                 <p>Woah, your project looks awesome! How long have you been coding for? I’m still new, but think I want
                     to dive into React as well soon. Perhaps you can give me an insight on where I can learn React?
                     Thanks!
                 </p>
+                </li> -->
+                </ul>
 
             </div>
-            <div class="commit">
+            
 
-                <p>anonim</p>
-                <span>18:32 today</span>
-
-
-                <p>Woah, your project looks awesome! How long have you been coding for? I’m still new, but think I want
-                    to dive into </p>
-
-            </div>
         </section>
+
         <!-- !SOCIAL-COMPONENT -->
         <section class="social_media">
             <h3>Follow us on social media</h3>
@@ -236,8 +234,12 @@
    
     <script src="./js/hamb.js"></script>
     <script type="module" src="./js/modal.js"></script>
+
+    <script src="./js/post.js"></script>
+
     <script type="module" src="./js/bookAdmin.js"></script>
     <script type="module" src="./js/bookPage.js"></script>
+
 </body>
 
 </html>
