@@ -68,3 +68,12 @@ onValue(bookAdmin,(snapshot)=>{
 
 
 
+
+
+let book_page_input = document.querySelector(".book_page_input")
+let book_page_button = book_page_input.querySelector(".book_page_button")
+
+book_page_button.addEventListener("click", function(e){
+    e.preventDefault()
+    book_page_input.value
+})
