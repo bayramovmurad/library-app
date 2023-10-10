@@ -42,6 +42,8 @@ send_btn?.addEventListener("click", function (e) {
         document.getElementById("contact_adress").value = "";
         document.getElementById("contact_phone").value = "";
         document.getElementById("contact_note").value = "";
+        alert("it is okay")
+
     }
 })
 
@@ -54,11 +56,11 @@ onValue(contact, (snapshot) => {
     let contactItem = contactDataToArr.map((item) =>
         `
         <tr>
-            <td>${id++}</td>
-            <td>${item[1].fullName}</td>
-            <td>${item[1].address}</td>
-             <td>${item[1].email}</td>
-            <td>${item[1].phone}</td>
+            <td >${id++}</td>
+            <td id="mobil_td">${item[1].fullName}</td>
+            <td id="mobil_td">${item[1].address}</td>
+             <td id="mobil_td">${item[1].email}</td>
+            <td id="mobil_td">${item[1].phone}</td>
 
         </tr>           
         `

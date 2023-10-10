@@ -28,7 +28,7 @@ joinBtn?.addEventListener('click', function (e) {
     e.preventDefault();
     console.log(email_input.value, fullname_input.value);
     if (email_input.value == 0 || fullname_input.value == 0) {
-        alert("formu doldurun")
+        alert("all")
     } else {
         let userInformation = {
             fullname: fullname_input.value,
@@ -37,6 +37,7 @@ joinBtn?.addEventListener('click', function (e) {
         push(users, userInformation)
         fullname_input.value = ""
         email_input.value = ""
+        alert("it is okay")
     }
 })
 
@@ -44,7 +45,7 @@ onValue(users, (snapshot) => {
     const data = snapshot.val();
     let dataToArr = Object.entries(data)
     let dataItem = dataToArr.map((item) => `
-         <tr>
+         <tr class="user-table">
             <td>${id++}</td>
             <td>${item[1].fullname}</td>
             <td>${item[1].email}</td>

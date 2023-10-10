@@ -41,12 +41,22 @@
                 </li>
             </ul>
         </nav>
-        <button class="join_us" data-toggle="modal" data-target="#staticBackdrop">
-            <a href="" data-toggle="modal" data-target="#exampleModal">
-                <img src="./img/user.svg" alt="">
-                <span>Join us</span>
-            </a>
+        <button class="join_us">
+            <img src="./img/user.svg" alt="">
+            Join us
         </button>
+        <div id="modal_body" class="modal_body">
+            <div class="modal_main">
+                <p class="modal_head_title">Join Us</p>
+                <form class="modal_form" action="">
+                    <div class="modal_form_input_group">
+                        <input placeholder="Full name" class="modal_input" type="text">
+                        <input placeholder="Email" class="modal_input" type="text">
+                    </div>
+                    <button class="modal_join_btn">Join</button>
+                </form>
+            </div>
+        </div>
         <div class="hamb_menu">
             <div id="list_icon" class="list_icon">
                 <img src="./img/listIcon.svg" alt=" " />
@@ -80,10 +90,10 @@
 
     <!-- !HEADER COMPONENT END-->
     <main class="main-content">
-        <button class="btn-mobile"> <a href="../index.html">&lt BACK</a> </button>
+        <button class="btn-mobile"> <a href="./catologPage.html">&lt BACK</a> </button>
         <section class="content">
-            <section class="content-left">
-                <button class="btn-first"> <a href="../index.html">&lt BACK</a> </button>
+            <!-- <section class="content-left">
+                <button class="btn-first"> <a href="./catologPage.html">&lt BACK</a> </button>
 
                 <button class="year"> 2017
                 </button>
@@ -105,7 +115,7 @@
             <section class="content-right">
                 <img src="./img/new.svg" alt="new">
                 <img src="./img/bookPage.svg" class="bookImg" alt="">
-            </section>
+            </section> -->
 
 
         </section>
@@ -171,12 +181,12 @@
                 </ul>
                 <ul>
                     <li>Help</li>
-                    <li><a href=" " ">Contacts</a>
+                    <li><a href=" " >Contacts</a>
                     </li>
-                    <li><a href=" " ">Purchase returns</a>
+                    <li><a href=" " >Purchase returns</a>
                     </li>
                     <li>
-                        <a href=" " ">Buyer help</a>
+                        <a href=" " >Buyer help</a>
                     </li>
                     </ul>
                 </div>
@@ -222,9 +232,14 @@
         console.log(a.toFixed(2))
     </script> -->
    
-    <script src=" ./js/hamb.js "></script>
+    <script src="./js/hamb.js"></script>
     <script type="module" src="./js/modal.js"></script>
+
     <script src="./js/post.js"></script>
+
+    <script type="module" src="./js/bookAdmin.js"></script>
+    <script type="module" src="./js/bookPage.js"></script>
+
 </body>
 
 </html>

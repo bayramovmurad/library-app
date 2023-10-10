@@ -112,11 +112,13 @@
 
 .content-right {
     position: relative;
+    width: 379px !important;
+    height: 529px !important;
 }
 
 .bookImg {
-    max-width: 379px;
-    max-height: 529px;
+    min-width: 379px;
+    min-height: 529px;
 }
 
 .content-right img:first-child {
