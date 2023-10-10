@@ -499,6 +499,12 @@ tr:nth-child(even) {
 
 }
 
+.material-icons {
+    border: none !important;
+    background-color: transparent;
+    color: var(--red);
+}
+
 .books-content h6 {
     color: var(--darkBlue);
     font-family: var(--montserrat);
@@ -507,6 +513,7 @@ tr:nth-child(even) {
     font-weight: 600;
     line-height: 196.187%;
 }
+
 
 .books-table table thead tr th {
     background: var(--red);
@@ -528,8 +535,9 @@ tr:nth-child(even) {
 }
 
 .books-table {
-   margin-right: 30px;
+    margin-right: 30px;
 }
+
 .table-content {
     margin-right: 30px;
 }
@@ -572,6 +580,32 @@ tr:nth-child(even) {
     vertical-align: middle;
 }
 
+.book_id {
+    width: 54px;
+    vertical-align: middle;
+}
+
+#mobil_td {
+    max-width: 199px;
+    vertical-align: middle;
+    padding: 8px 0px 8px 10px;
+}
+
+.book-admin-img {
+    display: flex;
+    gap: 10px;
+}
+
+.book-desc {
+    max-width: 199px !important;
+    white-space: nowrap !important;
+    overflow-x: scroll !important;
+    padding-right: 40px;
+
+    &&::-webkit-scrollbar {
+        display: none;
+    }
+}
 
 /* ! right_side end */
 
@@ -713,7 +747,8 @@ tr:nth-child(even) {
     .about-store-container div button {
         width: 300px !important;
     }
-    .search-bar input{
+
+    .search-bar input {
         width: 300px;
     }
 
@@ -748,9 +783,9 @@ tr:nth-child(even) {
     }
 
     .book-desc {
-        max-width: 199px;
-        white-space: nowrap;
-        overflow-x: scroll;
+        max-width: 199px !important;
+        white-space: nowrap !important;
+        overflow-x: scroll !important;
 
         &&::-webkit-scrollbar {
             display: none;

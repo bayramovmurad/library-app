@@ -68,7 +68,7 @@ onValue(bookAdmin, (snapshot) => {
     const bookAdminItem = bookAdminArr.map((item) => `
           
             <tr>
-                    <td>${id++}</td>
+                    <td class="book_id">${id++}</td>
                     <td id="mobil_td">
                         <div class="book-admin-img">
                             <img class="book_admin_img" src="${item[1].img}" alt="${item[1].name}">

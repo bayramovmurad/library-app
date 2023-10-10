@@ -156,11 +156,27 @@
                 font-size: 14px;
                 font-weight: 700;
                 margin: 30px 0 10px;
+                width: 145px;
+                white-space: nowrap;
+                overflow-x: scroll !important;
+                margin-left: 10px;
+
+                &&::-webkit-scrollbar {
+                    display: none;
+                }
             }
 
             .content-slider p {
                 font-size: 12px;
                 margin-bottom: 10px;
+                width: 145px;
+                    white-space: nowrap;
+                    overflow-x: scroll !important;
+                    margin-left: 10px;
+                
+                    &&::-webkit-scrollbar {
+                        display: none;
+                    }
             }
 
             .content-slider button {
