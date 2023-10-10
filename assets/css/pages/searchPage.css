@@ -123,6 +123,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow-y: scroll;
 }
     .search_section h2 {
         text-align: center;

@@ -42,6 +42,8 @@ send_btn?.addEventListener("click", function (e) {
         document.getElementById("contact_adress").value = "";
         document.getElementById("contact_phone").value = "";
         document.getElementById("contact_note").value = "";
+        alert("it is okay")
+
     }
 })
 
